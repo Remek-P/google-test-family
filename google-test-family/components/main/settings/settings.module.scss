@@ -1,0 +1,17 @@
+.settings {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  &:hover::before {
+    content: "Settings";
+    position: absolute;
+    inset: 0;
+  }
+
+  &SVG {
+
+    cursor: pointer;
+
+  }
+}

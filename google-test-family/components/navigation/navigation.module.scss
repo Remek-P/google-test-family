@@ -10,16 +10,18 @@
   }
 }
 
-.wrapperLeft {
+.wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-shrink: 0;
   gap: 14px;
 }
 
-.wrapperRight {
-  display: flex;
-  justify-content: space-between;
-  gap: 14px;
-
-}
+//.wrapperRight {
+//  display: flex;
+//  justify-content: space-between;
+//  align-items: center;
+//  gap: 14px;
+//
+//}
