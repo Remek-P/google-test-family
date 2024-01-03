@@ -1,9 +1,12 @@
+.navigationContainer, .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .navigation {
 
   &Container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     //gap: 3%;
     padding-block: 10px;
     padding-inline: 14px;
@@ -11,17 +14,6 @@
 }
 
 .wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   flex-shrink: 0;
   gap: 14px;
 }
-
-//.wrapperRight {
-//  display: flex;
-//  justify-content: space-between;
-//  align-items: center;
-//  gap: 14px;
-//
-//}
