@@ -2,7 +2,17 @@
 
   &Container {
     display: flex;
-    padding-block: 8px;
-    padding-inline: 16px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%;
+    padding-block: 10px;
+    padding-inline: 14px;
   }
+}
+
+.wrapperLeft {
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+  gap: 14px;
 }
