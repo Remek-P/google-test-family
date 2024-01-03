@@ -1,0 +1,25 @@
+@import "../../../styles/variables/colours";
+
+.signIn {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 7%;
+  padding: 4px 16px 2px 8px;
+  border: 1px solid $color-search-border;
+  border-radius: 500px;
+  font-size: 14px;
+  font-weight: 600;
+  color: $color-sign-in-text;
+
+  &:hover {
+    background-color: $color-sign-in;
+    border: 1px solid $color-sign-in;
+  }
+
+  &SVG {
+    fill: $color-sign-in-text
+  }
+}

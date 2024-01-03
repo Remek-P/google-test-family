@@ -1,5 +1,9 @@
 @import "reset.css";
 
+body {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: black;
