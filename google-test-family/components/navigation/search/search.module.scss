@@ -2,9 +2,11 @@
 
 .search {
   display: flex;
+  flex-grow: 1;
   justify-content: center;
   align-items: stretch;
-  width: 55%;
+  max-width: min(45%, 650px);
+
 
   &Input, &Button {
     all: unset;
@@ -23,15 +25,34 @@
   }
 
   &Button {
-    padding-inline: 20px;
+    padding-inline: 19px;
     border-top-right-radius: 500px;
     border-bottom-right-radius: 500px;
     border-left: none;
-    background-color: rgb(248, 248, 248);
+    background-color: $color-search-button;
     cursor: pointer;
+    position: relative;
+
+    &:hover::after {
+      content: attr(data-tooltiptext);
+      position: absolute;
+      top: 40px;
+      translate: -30% 50%;
+      padding: 10px;
+      border-radius: 4px;
+      background-color: #606060;
+      color: #fff;
+      font-size: 0.7rem;
+    }
+
+    &:hover {
+      background-color: $color-search-button-hover;
+    }
   }
 
   &SVG {
-    translate: 0 2px;
+    display: flex;
+    justify-content: center;
+    //translate: 0 2px;
   }
 }

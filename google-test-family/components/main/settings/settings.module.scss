@@ -1,12 +1,19 @@
 .settings {
+  all: unset;
   width: 100%;
   height: 100%;
   position: relative;
 
-  &:hover::before {
-    content: "Settings";
+  &:hover::after {
+    content: attr(data-tooltiptext);
     position: absolute;
-    inset: 0;
+    top: 35px;
+    translate: -65% 50%;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #606060;
+    color: #fff;
+    font-size: 0.7rem;
   }
 
   &SVG {

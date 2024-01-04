@@ -2,6 +2,7 @@
 
 .signIn {
   display: flex;
+  margin-right: 5px;
   width: 100%;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -13,6 +14,7 @@
   font-size: 14px;
   font-weight: 500;
   color: $color-sign-in-text;
+  cursor: pointer;
 
   &:hover {
     background-color: $color-sign-in;

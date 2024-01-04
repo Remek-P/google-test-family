@@ -1,3 +1,5 @@
+@import "../../../styles/variables/colours";
+
 .hamburger {
 
   &Container {
@@ -16,7 +18,7 @@
 
     &:hover {
       border-radius: 500px;
-      background-color: #e5e5e5;
+      background-color: $color-hamburger-hover;
     }
   }
 }
