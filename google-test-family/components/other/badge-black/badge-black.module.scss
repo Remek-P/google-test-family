@@ -1,0 +1,13 @@
+@import "../../../styles/variables/colours";
+
+.badgeGreyText {
+  display: block;
+  width: fit-content;
+  padding: 3px 4px;
+  background-color: $color-badge-black-background;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.35px;
+  line-height: 0.75rem;
+  color: $color-badge-black-text;
+}

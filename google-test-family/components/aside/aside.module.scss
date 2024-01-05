@@ -1,0 +1,35 @@
+@import "../../styles/variables/colours";
+
+.aside {
+  height: fit-content;
+
+  &Main {
+    --column-gap: 8px;
+    --column-width: calc(168px + 240px);
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    column-gap: 8px;
+    width: calc(var(--column-width) + var(--column-gap));
+  }
+
+  &Wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
+
+  &Container {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    padding-bottom: 1px;
+  }
+
+  &Dot {
+    font-size: 0.8em;
+    font-weight: 400;
+    line-height: 1.125rem;
+    color: $color-grey-text;
+  }
+}
