@@ -1,5 +1,6 @@
 import Image from "next/image";
 import classes from "./thumbnail.module.scss";
+import BadgeBlack from "@/components/other/badge-black/badge-black";
 
 function Thumbnail({
                      alt = "thumbnail",
@@ -15,6 +16,7 @@ function Thumbnail({
                  objectFit: 'contain',
                }}
         />
+        <BadgeBlack />
       </div>
   );
 }
