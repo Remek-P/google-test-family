@@ -1,3 +1,5 @@
+@import "../../../styles/variables/colours";
+
 .settings {
   all: unset;
   width: 100%;
@@ -18,5 +20,9 @@
 
   &SVG {
     cursor: pointer;
+
+    @media (prefers-color-scheme: dark) {
+      fill: $color-settings-dark;
+    }
   }
 }

@@ -12,7 +12,11 @@
     all: unset;
     padding-block: 6px;
     padding-inline: 16px;
-    border: 1px solid $color-search-border;
+    border: 1px solid $color-search-border-light;
+
+    @media (prefers-color-scheme: dark) {
+      border-color: $color-search-border-dark;
+    }
   }
 
   &Input {
@@ -29,9 +33,13 @@
     border-top-right-radius: 500px;
     border-bottom-right-radius: 500px;
     border-left: none;
-    background-color: $color-search-button;
+    background-color: $color-search-button-light;
     cursor: pointer;
     position: relative;
+
+    @media (prefers-color-scheme: dark) {
+      background-color: $color-search-button-dark;
+    }
 
     &:hover::after {
       content: attr(data-tooltiptext);
@@ -53,6 +61,10 @@
   &SVG {
     display: flex;
     justify-content: center;
+
+    @media (prefers-color-scheme: dark) {
+      fill: $color-search-icon;
+    }
     //translate: 0 2px;
   }
 }

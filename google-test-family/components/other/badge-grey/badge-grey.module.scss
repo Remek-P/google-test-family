@@ -5,10 +5,14 @@
   width: fit-content;
   padding: 3px 4px;
   border-radius: 1px;
-  background-color: $color-badge-grey-background;
+  background-color: $color-badge-grey-background-light;
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.35px;
   line-height: 0.75rem;
-  color: $color-badge-grey-text;
+  color: $color-badge-grey-text-light;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: $color-badge-grey-background-dark;
+  }
 }

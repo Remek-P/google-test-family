@@ -2,12 +2,16 @@
 
 .header1, .header2 {
 
-  color: $color-text;
+  color: $color-text-light;
   font-weight: 600;
   overflow: hidden;
   display: block;
   max-height: 5.6rem;
   word-break: break-word;
+
+  @media (prefers-color-scheme: dark) {
+    color: $color-text-dark;
+  }
 }
 
 .header {

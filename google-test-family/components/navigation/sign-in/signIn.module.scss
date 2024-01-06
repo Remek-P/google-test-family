@@ -9,19 +9,24 @@
   align-items: center;
   gap: 7%;
   padding: 4px 16px 2px 8px;
-  border: 1px solid $color-search-border;
+  border: 1px solid $color-search-border-light;
   border-radius: 500px;
   font-size: 14px;
   font-weight: 500;
-  color: $color-sign-in-text;
+  color: $color-sign-in-text-light;
   cursor: pointer;
 
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-sign-in-dark;
+    color: $color-sign-in-text-dark;
+  }
+
   &:hover {
-    background-color: $color-sign-in;
-    border: 1px solid $color-sign-in;
+    background-color: $color-sign-in-light;
+    border: 1px solid $color-sign-in-light;
   }
 
   &SVG {
-    fill: $color-sign-in-text
+    fill: $color-sign-in-text-dark
   }
 }
