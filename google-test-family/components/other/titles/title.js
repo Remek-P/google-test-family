@@ -1,8 +1,6 @@
 import classes from "./title.module.scss";
 
-function Title({ headerType="h2" }) {
-
-  const title = "V Rising: Original Soundtrack - Full Album - OST";
+function Title({ headerType="h2", title = "title" }) {
 
   const header1 = <h1 className={classes.header1}>{title}</h1>;
   const header2 = <h2 className={classes.header2}>{title}</h2>;

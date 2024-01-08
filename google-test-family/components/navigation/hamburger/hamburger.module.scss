@@ -9,8 +9,7 @@
   &SVG {
     width: 100%;
     height: 100%;
-    padding-block: 6px;
-    padding-inline: 8px;
+    padding: 8px;
 
     @media (prefers-color-scheme: dark) {
       fill: #fff;
@@ -18,7 +17,12 @@
 
     &:hover {
       border-radius: 500px;
-      background-color: $color-hamburger-hover;
+      background-color: $color-hamburger-hover-light;
+
+      @media (prefers-color-scheme: dark) {
+        fill: #fff;
+        background-color: $color-hamburger-hover-dark;
+      }
     }
   }
 }

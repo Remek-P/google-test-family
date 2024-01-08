@@ -4,25 +4,38 @@ import BadgeGrey from "@/components/other/badge-grey/badge-grey";
 
 import classes from "./aside.module.scss";
 import Thumbnail from "@/components/other/thumbnail/thumbnail";
+import { FAKE_SIDE_SUGGESTIONS } from "@/content/fake-side-suggestions/fake-sidesuggestions";
+import {useEffect, useState} from "react";
 
 function Aside() {
+
+  const [suggestion, setSuggestion] = useState({})
+
+  useEffect(() => {
+    setSuggestion(FAKE_SIDE_SUGGESTIONS);
+  }, []);
+
+
+
+  console.log(suggestion)
+
   return (
       <div className={classes.asideMain}>
-        <Thumbnail/>
+        <Thumbnail badgeBlackText={suggestion.length} />
 
         <div className={classes.asideWrapper}>
-          <Title/>
+          <Title title={suggestion.title}/>
 
           <div>
-            <GreyText key="1"/>
+            <GreyText key="1" greyText={suggestion.userName}/>
 
             <div className={classes.asideContainer}>
-              <GreyText key="2"/>
+              <GreyText key="2" greyText={suggestion.noOfPlays}/>
               <span className={classes.asideDot}>•</span>
-              <GreyText key="3"/>
+              <GreyText key="3" greyText={suggestion.publishedAgo}/>
             </div>
 
-            <BadgeGrey/>
+            <BadgeGrey isVisible={suggestion.isVisible}/>
           </div>
 
         </div>

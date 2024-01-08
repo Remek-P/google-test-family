@@ -26,6 +26,10 @@
     font-family: Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 400;
+
+    @media (prefers-color-scheme: dark) {
+      color: $color-text-dark;
+    }
   }
 
   &Button {

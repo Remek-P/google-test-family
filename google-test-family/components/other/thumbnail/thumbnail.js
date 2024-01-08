@@ -4,7 +4,8 @@ import BadgeBlack from "@/components/other/badge-black/badge-black";
 
 function Thumbnail({
                      alt = "thumbnail",
-                     src = "album-cover.png"
+                     src = "album-cover.png",
+                     badgeBlackText = "50:05",
                    }) {
   return (
       <div className={classes.thumbnail}>
@@ -16,7 +17,7 @@ function Thumbnail({
                  objectFit: 'contain',
                }}
         />
-        <BadgeBlack />
+        <BadgeBlack badgeBlackText={badgeBlackText} />
       </div>
   );
 }
