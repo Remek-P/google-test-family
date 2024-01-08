@@ -10,7 +10,7 @@ function Thumbnail({
       <div className={classes.thumbnail}>
         <Image src={`/album-cover/${src}`}
                alt={alt}
-               sizes="5vw"
+               sizes="168px"
                fill
                style={{
                  objectFit: 'contain',

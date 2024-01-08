@@ -7,8 +7,8 @@
     --column-gap: 8px;
     --column-width: calc(168px + 240px);
     display: grid;
-    grid-template-columns: 4fr 5fr;
-    column-gap: 8px;
+    grid-template-columns: 7fr 10fr;
+    column-gap: var(--column-gap);
     width: calc(var(--column-width) + var(--column-gap));
   }
 
@@ -16,7 +16,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
   }
 
   &Container {
