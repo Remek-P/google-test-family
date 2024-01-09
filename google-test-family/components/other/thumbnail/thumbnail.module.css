@@ -1,8 +1,8 @@
-@import "../../../styles/variables/other";
-
 .thumbnail {
   height: 94px;
-  border-radius: $border-radius;
+  border-radius: 10px;
   background-color: black;
   position: relative;
 }
+
+/*# sourceMappingURL=thumbnail.module.css.map */

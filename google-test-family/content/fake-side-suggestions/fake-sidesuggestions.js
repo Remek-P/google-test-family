@@ -136,3 +136,14 @@ export const FAKE_SIDE_SUGGESTIONS = [
     picture: "/album-cover/album-cover.png",
   },
 ]
+
+export const FAKE_VIDEO = {
+  id: id.next().value,
+  title: "V Rising: Original Soundtrack - Full Album - OST 4",
+  length: videoLength(),
+  isVisible: isVisible(),
+  userName: "AAAA",
+  noOfPlays: `${noOfPlays()} views`,
+  publishedAgo: calculateDateFrom(),
+  picture: "/album-cover/album-cover.png",
+}
