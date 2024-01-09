@@ -7,7 +7,7 @@ function* idGenerator() {
   }
 }
 
-export function videoLength() {
+function videoLength() {
   const toMultiply = idGenerator();
   const time1 = Math.round(Math.random() * toMultiply.next().value);
   const time2 = Math.round(time1 / Math.random());
@@ -94,7 +94,17 @@ function calculateDateFrom(
 
 const id = idGenerator();
 
-export const FAKE_SIDE_SUGGESTIONS =
+export const FAKE_SIDE_SUGGESTIONS = [
+  {
+    id: id.next().value,
+    title: "V Rising: Original Soundtrack - Full Album - OST",
+    length: videoLength(),
+    isVisible: isVisible(),
+    userName: "AAAA",
+    noOfPlays: `${noOfPlays()} views`,
+    publishedAgo: calculateDateFrom(),
+    picture: "/album-cover/album-cover.png",
+  },
   {
     id: id.next().value,
     title: "V Rising: Original Soundtrack - Full Album - OST 2",
@@ -103,4 +113,26 @@ export const FAKE_SIDE_SUGGESTIONS =
     userName: "AAAA",
     noOfPlays: `${noOfPlays()} views`,
     publishedAgo: calculateDateFrom(),
-  }
+    picture: "/album-cover/album-cover.png",
+  },
+  {
+    id: id.next().value,
+    title: "V Rising: Original Soundtrack - Full Album - OST 3",
+    length: videoLength(),
+    isVisible: isVisible(),
+    userName: "AAAA",
+    noOfPlays: `${noOfPlays()} views`,
+    publishedAgo: calculateDateFrom(),
+    picture: "/album-cover/album-cover.png",
+  },
+  {
+    id: id.next().value,
+    title: "V Rising: Original Soundtrack - Full Album - OST 4",
+    length: videoLength(),
+    isVisible: isVisible(),
+    userName: "AAAA",
+    noOfPlays: `${noOfPlays()} views`,
+    publishedAgo: calculateDateFrom(),
+    picture: "/album-cover/album-cover.png",
+  },
+]

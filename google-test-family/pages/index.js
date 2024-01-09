@@ -1,11 +1,13 @@
-import Navigation from "@/components/navigation/navigation";
-import Aside from "@/components/aside/aside";
+import AsideSection from "@/components/aside-section/aside-section";
+import classes from "./index.module.scss";
 
 export default function Home() {
   return (
     <>
-      <Navigation />
-      <Aside />
+      <div className={classes.index}>
+
+        <AsideSection />
+      </div>
     </>
   )
 }

@@ -1,15 +1,17 @@
-@import "../../styles/variables/colours";
+@import "../../../styles/variables/colours";
 
-.aside {
-  height: fit-content;
+.asideItem {
 
   &Main {
     --column-gap: 8px;
     --column-width: calc(168px + 240px);
+
     display: grid;
     grid-template-columns: 7fr 10fr;
+    margin: 8px 16px;
     column-gap: var(--column-gap);
     width: calc(var(--column-width) + var(--column-gap));
+    text-decoration: none;
   }
 
   &Wrapper {

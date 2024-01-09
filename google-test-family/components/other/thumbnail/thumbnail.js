@@ -4,12 +4,12 @@ import BadgeBlack from "@/components/other/badge-black/badge-black";
 
 function Thumbnail({
                      alt = "thumbnail",
-                     src = "album-cover.png",
                      badgeBlackText = "50:05",
+                     src,
                    }) {
   return (
       <div className={classes.thumbnail}>
-        <Image src={`/album-cover/${src}`}
+        <Image src={src}
                alt={alt}
                sizes="168px"
                fill
