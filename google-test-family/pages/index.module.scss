@@ -1,6 +1,13 @@
+@import "../styles/variables/breakpoints";
+@import "../styles/variables/other";
+
 .index {
-  display: grid;
-  grid-template-columns: 10fr 4fr;
-  column-gap: 16px;
-  margin: 24px;
+  display: block;
+  margin: $margin;
+
+  @media (min-width: $breakpointXL) {
+    display: grid;
+    grid-template-columns: 10fr 4fr;
+    column-gap: 16px;
+  }
 }

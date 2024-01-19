@@ -14,9 +14,9 @@ function AsideSection() {
 
 
   return (
-      <section>
+      <aside>
         {suggestions.map((suggestion) => <AsideItem key={suggestion.id} suggestion={suggestion} />)}
-      </section>
+      </aside>
   );
 }
 

@@ -25,9 +25,9 @@ const path = `/video${suggestion.id}`
             <GreyText key="1" greyText={suggestion.userName}/>
 
             <div className={classes.asideItemContainer}>
-              <GreyText key="2" greyText={suggestion.noOfPlays}/>
+              <GreyText key="2" greyText={suggestion.noOfPlays} wrapSpace={"nowrap"} />
               <span className={classes.asideItemDot}>•</span>
-              <GreyText key="3" greyText={suggestion.publishedAgo}/>
+              <GreyText key="3" greyText={suggestion.publishedAgo} />
             </div>
 
             <BadgeGrey isVisible={suggestion.isVisible}/>
