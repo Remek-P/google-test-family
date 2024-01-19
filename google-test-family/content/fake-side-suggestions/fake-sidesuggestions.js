@@ -18,14 +18,11 @@ function videoLength() {
     return "01:00"
   }
 
-  if(time1 < 7 && time2 < 10 && time3 < 6 && time4 < 10) {
+  if (time1 <= 6 && time2 <= 9 && time3 <= 5 && time4 <= 9) {
     return `${time1}${time2}:${time3}${time4}`
-  }
-
-  if (time1 >= 7 || time2 >= 10 || time3 >= 7 || time4 < 10) {
+  } else {
     return "01:12"
   }
-  return "00:56"
 }
 
 function isVisible() {
@@ -37,14 +34,14 @@ function isVisible() {
 function noOfPlays() {
   const random = Math.round(Math.random() * 10);
 
-  if (random < 1) {
+  if (random < 3) {
     return random * 3
   }
-  if (random <= 3) {
-    return `${random * 3}K`
+  if (random <= 7) {
+    return `${random * 2}K`
   }
   if (random <= 10) {
-    return `${random * 3}M`
+    return `${random}M`
   }
 }
 
