@@ -2,12 +2,14 @@
 
 .header1, .header2 {
 
+  max-height: 5.6rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   color: $color-text-light;
   font-weight: 600;
-  overflow: hidden;
-  display: -webkit-box;
-  max-height: 5.6rem;
   word-break: break-word;
+  overflow: hidden;
 
   @media (prefers-color-scheme: dark) {
     color: $color-text-dark;
@@ -17,15 +19,14 @@
 .header {
 
   &1 {
-    font-size: 1.25rem;
-    line-height: 2rem;
+    font-size: 1.36rem;
+    line-height: 2.8rem;
+    font-weight: 700;
   }
 
   &2 {
 
     font-size: 0.875rem;
     line-height: 1rem;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
   }
 }

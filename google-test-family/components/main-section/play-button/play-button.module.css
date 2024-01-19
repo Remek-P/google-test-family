@@ -1,0 +1,14 @@
+.videoButtonSVG {
+  position: absolute;
+  inset: 50%;
+  transform: translate(-50%, -50%);
+  height: 48px;
+  width: 68px;
+  fill: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.videoButtonSVG:hover {
+  fill: #f00;
+}
+
+/*# sourceMappingURL=play-button.module.css.map */

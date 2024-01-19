@@ -1,5 +1,6 @@
 import classes from "./video.module.scss";
 import Image from "next/image";
+import PlayButton from "@/components/main-section/play-button/play-button";
 
 function Video() {
   return (
@@ -13,6 +14,7 @@ function Video() {
                  // borderRadius: "8px",
                }}
         />
+        <PlayButton />
       </div>
   );
 }

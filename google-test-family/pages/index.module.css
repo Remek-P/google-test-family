@@ -1,0 +1,13 @@
+.index {
+  display: block;
+  margin: 24px;
+}
+@media (min-width: 1016px) {
+  .index {
+    display: grid;
+    grid-template-columns: 10fr 4fr;
+    column-gap: 16px;
+  }
+}
+
+/*# sourceMappingURL=index.module.css.map */

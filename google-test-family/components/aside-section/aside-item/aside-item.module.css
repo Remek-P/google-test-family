@@ -1,0 +1,31 @@
+.asideItemMain {
+  --column-gap: 8px;
+  --column-width: calc(168px + 240px);
+  display: grid;
+  grid-template-columns: 7fr 10fr;
+  margin-inline: 4px;
+  margin-bottom: 8px;
+  column-gap: var(--column-gap);
+  max-width: calc(var(--column-width) + var(--column-gap));
+  text-decoration: none;
+}
+.asideItemWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 104px;
+}
+.asideItemContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  padding-bottom: 1px;
+}
+.asideItemDot {
+  font-size: 0.8em;
+  font-weight: 400;
+  line-height: 1.125rem;
+  color: #797979;
+}
+
+/*# sourceMappingURL=aside-item.module.css.map */
