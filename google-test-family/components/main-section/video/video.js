@@ -9,9 +9,9 @@ function Video() {
                alt={"title"}
                sizes="1280px, 50vw, 33vw"
                fill
+               priority={true}
                style={{
                  objectFit: 'cover',
-                 // borderRadius: "8px",
                }}
         />
         <PlayButton />
