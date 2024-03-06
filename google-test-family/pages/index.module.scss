@@ -3,12 +3,16 @@
 
 .index {
   position: relative;
-  display: block;
+  max-width: 1754px;;
   margin: $margin;
 
   @media (min-width: $breakpointXL) {
     display: grid;
     grid-template-columns: 10fr 4fr;
     column-gap: 16px;
+  }
+
+  @media  (min-width: $breakpointXXXL) {
+    margin: $margin auto;;
   }
 }

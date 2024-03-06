@@ -1,6 +1,6 @@
 .index {
   position: relative;
-  display: block;
+  max-width: 1754px;
   margin: 24px;
 }
 @media (min-width: 1016px) {
@@ -8,6 +8,11 @@
     display: grid;
     grid-template-columns: 10fr 4fr;
     column-gap: 16px;
+  }
+}
+@media (min-width: 1775px) {
+  .index {
+    margin: 24px auto;
   }
 }
 
