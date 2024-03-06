@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <div className={classes.index}>
-        <Modal children="test" />
+        <Modal children="test" open={false} />
         <MainSection />
         <AsideSection />
       </div>

@@ -6,14 +6,13 @@ import { useEffect, useState } from "react";
 
 function AsideSection() {
 
-  const [suggestions, setSuggestions] = useState([])
+  const [suggestions, setSuggestions] = useState([]);
 
   useEffect(() => {
     setSuggestions(FAKE_SIDE_SUGGESTIONS);
   }, []);
 
-
-  return (
+    return (
       <aside>
         {suggestions.map((suggestion) => <AsideItem key={suggestion.id} suggestion={suggestion} />)}
       </aside>

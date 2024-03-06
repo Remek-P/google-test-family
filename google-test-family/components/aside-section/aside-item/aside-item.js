@@ -9,7 +9,9 @@ import Link from "next/link";
 
 function AsideItem({ suggestion }) {
 
-const path = `/video${suggestion.id}`
+  const path = `/video${suggestion.id}`;
+
+  console.log(suggestion.picture)
 
   return (
       <Link href={path} className={classes.asideItemMain}>
