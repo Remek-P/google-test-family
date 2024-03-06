@@ -100,7 +100,7 @@ export const FAKE_SIDE_SUGGESTIONS = [
     userName: "Axel",
     noOfPlays: `${noOfPlays()} views`,
     publishedAgo: calculateDateFrom(),
-    picture: 	"https://picsum.photos/id/00/168/94",
+    picture: 	"https://picsum.photos/id/0/168/94",
   },
   {
     id: id.next().value,
