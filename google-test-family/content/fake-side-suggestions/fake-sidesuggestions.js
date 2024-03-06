@@ -91,8 +91,6 @@ function calculateDateFrom(
 
 const id = idGenerator();
 
-const url = "https://picsum.photos/168/94"
-
 export const FAKE_SIDE_SUGGESTIONS = [
   {
     id: id.next().value,
@@ -102,7 +100,7 @@ export const FAKE_SIDE_SUGGESTIONS = [
     userName: "Axel",
     noOfPlays: `${noOfPlays()} views`,
     publishedAgo: calculateDateFrom(),
-    picture: 	url,
+    picture: 	"https://picsum.photos/id/0/168/94",
   },
   {
     id: id.next().value,
@@ -112,7 +110,8 @@ export const FAKE_SIDE_SUGGESTIONS = [
     userName: "Axel",
     noOfPlays: `${noOfPlays()} views`,
     publishedAgo: calculateDateFrom(),
-  picture: 	url,  },
+    picture: 	"https://picsum.photos/id/10/168/94",
+  },
   {
     id: id.next().value,
     title: "V Rising: Original Soundtrack - Full Album - OST 3",
@@ -121,7 +120,8 @@ export const FAKE_SIDE_SUGGESTIONS = [
     userName: "Axel",
     noOfPlays: `${noOfPlays()} views`,
     publishedAgo: calculateDateFrom(),
-  picture: 	url,  },
+    picture: 	"https://picsum.photos/id/20/168/94",
+  },
   {
     id: id.next().value,
     title: "V Rising: Original Soundtrack - Full Album - OST 4",
@@ -130,7 +130,8 @@ export const FAKE_SIDE_SUGGESTIONS = [
     userName: "Axel",
     noOfPlays: `${noOfPlays()} views`,
     publishedAgo: calculateDateFrom(),
-  picture: 	url,  },
+    picture: 	"https://picsum.photos/id/30/168/94",
+  },
   {
     id: id.next().value,
     title: "V Rising: Original Soundtrack - Full Album - OST 4",
@@ -139,7 +140,8 @@ export const FAKE_SIDE_SUGGESTIONS = [
     userName: "Axel",
     noOfPlays: `${noOfPlays()} views`,
     publishedAgo: calculateDateFrom(),
-  picture: 	url,  },
+    picture: 	"https://picsum.photos/id/40/168/94",
+  },
   {
     id: id.next().value,
     title: "V Rising: Original Soundtrack - Full Album - OST 4",
@@ -148,7 +150,8 @@ export const FAKE_SIDE_SUGGESTIONS = [
     userName: "Axel",
     noOfPlays: `${noOfPlays()} views`,
     publishedAgo: calculateDateFrom(),
-  picture: 	url,  },
+    picture: 	"https://picsum.photos/id/50/168/94",
+  },
   {
     id: id.next().value,
     title: "V Rising: Original Soundtrack - Full Album - OST 4",
@@ -157,7 +160,8 @@ export const FAKE_SIDE_SUGGESTIONS = [
     userName: "Axel",
     noOfPlays: `${noOfPlays()} views`,
     publishedAgo: calculateDateFrom(),
-  picture: 	url,  },
+    picture: 	"https://picsum.photos/id/60/168/94",
+  },
   {
     id: id.next().value,
     title: "V Rising: Original Soundtrack - Full Album - OST 2",
@@ -166,7 +170,8 @@ export const FAKE_SIDE_SUGGESTIONS = [
     userName: "Axel",
     noOfPlays: `${noOfPlays()} views`,
     publishedAgo: calculateDateFrom(),
-  picture: 	url,  },
+    picture: 	"https://picsum.photos/id/70/168/94",
+  },
   {
     id: id.next().value,
     title: "V Rising: Original Soundtrack - Full Album - OST 3",
@@ -175,7 +180,8 @@ export const FAKE_SIDE_SUGGESTIONS = [
     userName: "Axel",
     noOfPlays: `${noOfPlays()} views`,
     publishedAgo: calculateDateFrom(),
-  picture: 	url,  },
+    picture: 	"https://picsum.photos/id/80/168/94",
+  },
   {
     id: id.next().value,
     title: "V Rising: Original Soundtrack - Full Album - OST 4",
@@ -184,7 +190,8 @@ export const FAKE_SIDE_SUGGESTIONS = [
     userName: "Axel",
     noOfPlays: `${noOfPlays()} views`,
     publishedAgo: calculateDateFrom(),
-  picture: 	url,  },
+    picture: 	"https://picsum.photos/id/90/168/94",
+  },
   {
     id: id.next().value,
     title: "V Rising: Original Soundtrack - Full Album - OST 4",
@@ -193,7 +200,8 @@ export const FAKE_SIDE_SUGGESTIONS = [
     userName: "Axel",
     noOfPlays: `${noOfPlays()} views`,
     publishedAgo: calculateDateFrom(),
-  picture: 	url,  },
+    picture: 	"https://picsum.photos/id/100/168/94",
+  },
   {
     id: id.next().value,
     title: "V Rising: Original Soundtrack - Full Album - OST 4",
@@ -202,7 +210,8 @@ export const FAKE_SIDE_SUGGESTIONS = [
     userName: "Axel",
     noOfPlays: `${noOfPlays()} views`,
     publishedAgo: calculateDateFrom(),
-  picture: 	url,  }
+    picture: 	"https://picsum.photos/id/110/168/94",
+  }
 ]
 
 export const FAKE_VIDEO = {
@@ -213,4 +222,5 @@ export const FAKE_VIDEO = {
   userName: "Axel",
   noOfPlays: `${noOfPlays()} views`,
   publishedAgo: calculateDateFrom(),
-  picture: 	url,}
+  picture: 	"https://picsum.photos/id/120/168/94",
+}
