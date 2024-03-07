@@ -8,6 +8,8 @@ function Modal({ children, open = true}) {
 
   useEffect(() => {
     setEnabledDocument(true)
+
+    return setEnabledDocument(false)
   }, []);
 
   if (!open) return null;
