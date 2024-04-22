@@ -1,10 +1,10 @@
 @import "../../../styles/variables/colours";
+@import "../../../styles/variables/breakpoints";
 
 .header {
   position: absolute;
   padding: 16px;
   display: flex;
-  //justify-content: space-between;
   width: 100%;
   gap: 4%;
 
@@ -16,6 +16,9 @@
     color: $color-sign-in-text-dark;
   }
 
+  @media (max-width: $breakpointM) {
+    flex-direction: column;
+  }
 
   // There are two containers &ContainerInfo and &ContainerAction but no &Container
   &Container {
@@ -31,14 +34,18 @@
         width: 36px;
         scale: 80%;
       }
-
-
     }
 
     &Action{
       display: flex;
       justify-content: space-evenly;
       align-items: center;
+      gap: 5px;
+
+      @media (max-width: $breakpointM) {
+        padding-top: 3%;
+        padding-left: 50%;
+      }
     }
   }
 
@@ -62,5 +69,37 @@
       font-weight: 400;
       line-height: 1.42857143;
     }
+  }
+
+  &Link,
+  &Button {
+    border-radius: 500px;
+
+    line-height: 1.5;
+    font-size: 14px;
+    font-weight: 400;
+    color: $color-sign-in-text-light;
+    cursor: pointer;
+
+    @media (prefers-color-scheme: dark) {
+      border-color: $color-sign-in-dark;
+      color: $color-sign-in-text-dark;
+    }
+
+    &:hover {
+      --hover_color: #f0f4f9;
+
+      background-color: var(--hover_color);
+    }
+  }
+
+  &Link {
+    padding: 11px;
+    text-decoration: none;
+  }
+
+  &Button {
+    padding: 9px 24px;
+    border: 1px solid $color-search-button-dark;
   }
 }

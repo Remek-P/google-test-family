@@ -33,10 +33,10 @@ function LoginHeader({ setShowHeader }) {
 
         <div className={classes.headerContainerAction}>
 
-          <Link href={"https://support.google.com/accounts?p=new-si-ui"}>
+          <Link href={"https://support.google.com/accounts?p=new-si-ui"} className={classes.headerLink}>
             Więcej&nbsp;informacji
           </Link>
-          <button onClick={() => {setShowHeader(false)}}>
+          <button className={classes.headerButton} onClick={() => {setShowHeader(false)}}>
             Zamknij
           </button>
 

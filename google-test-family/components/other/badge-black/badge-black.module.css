@@ -1,0 +1,16 @@
+.badgeBlackText {
+  position: absolute;
+  bottom: 5%;
+  right: 3%;
+  width: fit-content;
+  padding: 3px 4px;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.35px;
+  line-height: 0.75rem;
+  color: #fff;
+}
+
+/*# sourceMappingURL=badge-black.module.css.map */

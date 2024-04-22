@@ -1,0 +1,25 @@
+.hamburgerContainer {
+  cursor: pointer;
+}
+.hamburgerSVG {
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+}
+@media (prefers-color-scheme: dark) {
+  .hamburgerSVG {
+    fill: #fff;
+  }
+}
+.hamburgerSVG:hover {
+  border-radius: 500px;
+  background-color: #e5e5e5;
+}
+@media (prefers-color-scheme: dark) {
+  .hamburgerSVG:hover {
+    fill: #fff;
+    background-color: #272a2e;
+  }
+}
+
+/*# sourceMappingURL=hamburger.module.css.map */

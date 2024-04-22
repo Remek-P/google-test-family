@@ -1,0 +1,18 @@
+.badgeGreyText {
+  width: fit-content;
+  padding: 3px 4px;
+  border-radius: 1px;
+  background-color: #f2f2f2;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.35px;
+  line-height: 0.75rem;
+  color: #797979;
+}
+@media (prefers-color-scheme: dark) {
+  .badgeGreyText {
+    background-color: #272727;
+  }
+}
+
+/*# sourceMappingURL=badge-grey.module.css.map */

@@ -1,0 +1,31 @@
+.signIn {
+  display: flex;
+  margin-right: 5px;
+  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 7%;
+  padding: 4px 16px 2px 8px;
+  border: 1px solid #ccc;
+  border-radius: 500px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #065fd4;
+  cursor: pointer;
+}
+@media (prefers-color-scheme: dark) {
+  .signIn {
+    border-color: #3f3f3f;
+    color: #3da5fe;
+  }
+}
+.signIn:hover {
+  background-color: #def1ff;
+  border: 1px solid #def1ff;
+}
+.signInSVG {
+  fill: #3da5fe;
+}
+
+/*# sourceMappingURL=signIn.module.css.map */
