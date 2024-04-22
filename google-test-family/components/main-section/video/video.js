@@ -3,8 +3,12 @@ import Image from "next/image";
 import PlayButton from "@/components/main-section/play-button/play-button";
 
 function Video({ setIsOpen }) {
+  const handleClick = () => {
+    setIsOpen(true)
+  };
+
   return (
-      <div className={classes.video}>
+      <div className={classes.video} onClick={handleClick}>
         <Image src={"/album-cover/album-cover-main.jpg"}
                alt={"title"}
                sizes="1280px, 50vw, 33vw"
@@ -14,7 +18,7 @@ function Video({ setIsOpen }) {
                  objectFit: 'cover',
                }}
         />
-        <PlayButton setIsOpen={setIsOpen} />
+        <PlayButton />
       </div>
   );
 }

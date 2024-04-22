@@ -1,16 +1,9 @@
 import classes from "./play-button.module.scss";
 
-function PlayButton({ setIsOpen }) {
-
-  const handleClick = () => {
-    // temp
-    if (true) {
-      setIsOpen(true)
-    }
-  }
+function PlayButton() {
 
   return (
-      <div onClick={handleClick}>
+      <div>
         <svg height="100%"
              viewBox="0 0 68 48"
              width="100%"
