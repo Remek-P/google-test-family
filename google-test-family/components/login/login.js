@@ -1,8 +1,9 @@
-import {useState} from "react";
+import { useState } from "react";
 
 import classes from "./login.module.scss";
 
 import LoginHeader from "@/components/login/header/login-header";
+import LoginForm from "@/components/login/login-form/login-form";
 
 function Login() {
 
@@ -11,7 +12,7 @@ function Login() {
   return (
       <section className={classes.modalLogin}>
         { showHeader && <LoginHeader setShowHeader={setShowHeader}/> }
-        a
+        <LoginForm />
       </section>
   );
 }

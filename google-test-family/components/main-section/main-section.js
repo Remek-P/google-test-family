@@ -4,7 +4,7 @@ import Title from "@/components/other/titles/title";
 
 function MainSection({ setIsOpen }) {
 
-  const title = "Co warto wiedzieć o IA w 2024 roku"
+  const title = "Co warto wiedzieć o AI w 2024 roku"
 
   return (
       <section className={classes.mainSection}>
