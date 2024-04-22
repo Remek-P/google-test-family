@@ -1,0 +1,47 @@
+.header {
+  position: absolute;
+  padding: 16px;
+  display: flex;
+  width: 100%;
+  gap: 4%;
+  border-bottom: 1px solid #aaaaaa;
+  background-color: white;
+}
+@media (prefers-color-scheme: dark) {
+  .header {
+    background-color: #3f3f3f;
+    color: #3da5fe;
+  }
+}
+.headerContainerInfo {
+  display: flex;
+  column-gap: 2%;
+  flex-grow: 1;
+}
+.headerContainerInfo > svg {
+  flex-shrink: 0;
+  height: 36px;
+  width: 36px;
+  scale: 80%;
+}
+.headerContainerAction {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.headerInformation {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.headerInformation > p:first-of-type {
+  line-height: 1.5;
+  font-weight: 500;
+}
+.headerInformation > p:last-of-type {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.42857143;
+}
+
+/*# sourceMappingURL=login-header.module.css.map */

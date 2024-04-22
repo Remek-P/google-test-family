@@ -1,0 +1,66 @@
+@import "../../../styles/variables/colours";
+
+.header {
+  position: absolute;
+  padding: 16px;
+  display: flex;
+  //justify-content: space-between;
+  width: 100%;
+  gap: 4%;
+
+  border-bottom: 1px solid $color-badge-grey-text-dark;
+  background-color: white;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: $color-sign-in-dark;
+    color: $color-sign-in-text-dark;
+  }
+
+
+  // There are two containers &ContainerInfo and &ContainerAction but no &Container
+  &Container {
+
+    &Info{
+      display: flex;
+      column-gap: 2%;
+      flex-grow: 1;
+
+      & > svg {
+        flex-shrink: 0;
+        height: 36px;
+        width: 36px;
+        scale: 80%;
+      }
+
+
+    }
+
+    &Action{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  }
+
+  //Located in ContainerInfo
+  &Information {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    & > p {
+      //max-width: 72%;
+    }
+
+    & > p:first-of-type {
+      line-height: 1.5;
+      font-weight: 500;
+    }
+
+    & > p:last-of-type {
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: 1.42857143;
+    }
+  }
+}

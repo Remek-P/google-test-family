@@ -2,7 +2,7 @@ import classes from "./video.module.scss";
 import Image from "next/image";
 import PlayButton from "@/components/main-section/play-button/play-button";
 
-function Video() {
+function Video({ setIsOpen }) {
   return (
       <div className={classes.video}>
         <Image src={"/album-cover/album-cover-main.jpg"}
@@ -14,7 +14,7 @@ function Video() {
                  objectFit: 'cover',
                }}
         />
-        <PlayButton />
+        <PlayButton setIsOpen={setIsOpen} />
       </div>
   );
 }

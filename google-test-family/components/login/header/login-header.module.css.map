@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["login-header.module.scss","../../../styles/variables/colours.scss"],"names":[],"mappings":"AAEA;EACE;EACA;EACA;EAEA;EACA;EAEA;EACA;;AAEA;EAXF;IAYI,kBCRiB;IDSjB,OCPsB;;;ADctB;EACE;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;;AAMJ;EACE;EACA;EACA;;AAKJ;EACE;EACA;EACA;;AAMA;EACE;EACA;;AAGF;EACE;EACA;EACA","file":"login-header.module.css"}

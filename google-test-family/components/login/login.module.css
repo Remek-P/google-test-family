@@ -1,3 +1,7 @@
-
+.modalLogin {
+  position: relative;
+  height: 100%;
+  background-color: #def1ff;
+}
 
 /*# sourceMappingURL=login.module.css.map */
