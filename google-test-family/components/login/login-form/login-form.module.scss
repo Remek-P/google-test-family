@@ -17,7 +17,6 @@
     }
   }
 
-
   &Container {
     &Company {
 
@@ -52,6 +51,7 @@
       top: 50%;
       left: 5%;
       translate: 0% -50%;
+      padding: 0.2%;
 
       transition: var(--transition);
 
@@ -93,6 +93,4 @@
       }
     }
   }
-
-
 }
