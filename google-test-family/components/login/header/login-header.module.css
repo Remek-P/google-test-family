@@ -1,5 +1,6 @@
 .header {
   position: absolute;
+  top: 0;
   padding: 16px;
   display: flex;
   width: 100%;
@@ -35,11 +36,11 @@
   justify-content: space-evenly;
   align-items: center;
   gap: 5px;
+  padding-top: 5%;
 }
 @media (max-width: 600px) {
   .headerContainerAction {
-    padding-top: 3%;
-    padding-left: 50%;
+    align-self: end;
   }
 }
 .headerInformation {

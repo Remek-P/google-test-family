@@ -1,6 +1,8 @@
-.loginForm {
-  display: inline-block;
-  margin-top: 200px;
+@media (min-width: 810px) {
+  .loginFormContainerCompany {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=login-form.module.css.map */

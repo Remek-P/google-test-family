@@ -1,4 +1,19 @@
+@import "../../../styles/variables/breakpoints";
+
 .loginForm {
-  display: inline-block; //prevents margin collapse issue
-  margin-top: 200px;
+
+
+  &Container {
+    &Company {
+
+      @media (min-width: $breakpointL) {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    &Action {
+
+    }
+  }
 }
