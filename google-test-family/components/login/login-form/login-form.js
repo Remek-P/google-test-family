@@ -2,6 +2,10 @@ import classes from "./login-form.module.scss";
 import Link from "next/link";
 
 function LoginForm() {
+
+  const emailLabel = "Adres e-mail lub telefon";
+  const passwordLabel = "Wpisz hasło";
+
   return (
       <div className={classes.loginForm}>
 
@@ -23,7 +27,7 @@ function LoginForm() {
             <path fill="none" d="M2 2h44v44H2z"></path>
           </svg>
 
-          <h2>Zaloguj&nbsp;się</h2>
+          <h2 className={classes.loginFormHeader}>Zaloguj&nbsp;się</h2>
           <p>Przejdź do YouTube</p>
 
         </div>
@@ -32,14 +36,30 @@ function LoginForm() {
         <div className={classes.loginFormContainerAction}>
 
 
-          <div>
-            <label htmlFor="email">Adres e-mail lub telefon</label>
-            <input id="email" name="email" type="email"/>
+          <div className={classes.inputContainerEmail}
+               data-label={emailLabel}>
+            <label className="visually-hidden"
+                   htmlFor="email">
+              {emailLabel}</label>
+            <input id="email"
+                   name="email"
+                   type="email"
+                   placeholder=""
+                   required
+            />
           </div>
 
-          <div>
-            <label htmlFor="password">Adres e-mail lub telefon</label>
-            <input id="password" name="password" type="password"/>
+          <div className={classes.inputContainerPassword}
+               data-label={passwordLabel}>
+            <label className="visually-hidden"
+                   htmlFor="password">
+              {passwordLabel}</label>
+            <input id="password"
+                   name="password"
+                   type="password"
+                   placeholder=""
+                   required
+            />
           </div>
 
           <Link href="/">Nie pamiętasz danych?</Link>

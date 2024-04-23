@@ -1,6 +1,21 @@
+@import "../../../styles/variables/colours";
 @import "../../../styles/variables/breakpoints";
 
 .loginForm {
+  padding: 24px;
+
+  background-color: white;
+  border-radius: 30px;
+
+  &Header {
+    line-height: 1.25;
+    word-break: break-word;
+    font-size: 2rem;
+
+    @media (min-width: $breakpointXL) {
+      font-size: 2.25rem;
+    }
+  }
 
 
   &Container {
@@ -13,7 +28,71 @@
     }
 
     &Action {
-
     }
   }
+}
+
+.inputContainer {
+  &Email,
+  &Password {
+    position: relative;
+    padding: 4px;
+
+    --transition: 0.3s;
+
+    & > input:focus {
+      outline: unset;
+      border: 1px solid $color-sign-in-text-light;
+    }
+
+
+    &::before {
+      content: attr(data-label);
+      position: absolute;
+      top: 50%;
+      left: 5%;
+      translate: 0% -50%;
+
+      transition: var(--transition);
+
+      pointer-events: none;
+    }
+
+    &:has(input:focus)::before,
+    &:has(input:not(:placeholder-shown))::before {
+      top: 0;
+      left: 0;
+      translate: 20% -20%;
+
+      background-color: white;
+
+      font-size: 0.7rem;
+      color: $color-sign-in-text-dark;
+
+      transition: var(--transition);
+    }
+
+    input {
+      width: 100%;
+      height: 28px;
+      margin: 1px 1px 0 1px;
+      padding: 25px 15px;
+
+      background-color: transparent;
+
+      border: 1px solid $color-login-input;
+      border-radius: 4px;
+
+      color: $color-login-input;
+      font-size: 1rem;
+
+      text-align: left;
+
+      &::placeholder {
+        color: transparent;
+      }
+    }
+  }
+
+
 }
