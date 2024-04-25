@@ -44,7 +44,7 @@ function LoginForm() {
             <input id="email"
                    name="email"
                    type="email"
-                   placeholder=""
+                   placeholder={emailLabel}
                    required
             />
           </div>
@@ -57,7 +57,7 @@ function LoginForm() {
             <input id="password"
                    name="password"
                    type="password"
-                   placeholder=""
+                   placeholder={passwordLabel}
                    required
             />
           </div>

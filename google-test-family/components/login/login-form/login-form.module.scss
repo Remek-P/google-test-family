@@ -60,9 +60,7 @@
 
     &:has(input:focus)::before,
     &:has(input:not(:placeholder-shown))::before {
-      top: 0;
-      left: 0;
-      translate: 20% -20%;
+      top: 8%;
 
       background-color: white;
 

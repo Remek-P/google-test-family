@@ -39,9 +39,7 @@
   pointer-events: none;
 }
 .inputContainerEmail:has(input:focus)::before, .inputContainerEmail:has(input:not(:placeholder-shown))::before, .inputContainerPassword:has(input:focus)::before, .inputContainerPassword:has(input:not(:placeholder-shown))::before {
-  top: 0;
-  left: 0;
-  translate: 20% -20%;
+  top: 8%;
   background-color: white;
   font-size: 0.7rem;
   color: #3da5fe;
