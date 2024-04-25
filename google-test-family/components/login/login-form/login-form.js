@@ -67,7 +67,7 @@ function LoginForm() {
           <p>To nie Twój komputer? Aby się zalogować, użyj okna prywatnego.</p>
           <Link href="/">Dowiedz się więcej o używaniu trybu gościa</Link>
 
-          <div>
+          <div className={classes.buttonsContainer}>
             <Link href="/">Utwórz&nbsp;konto</Link>
             <button>Zaloguj</button>
           </div>
