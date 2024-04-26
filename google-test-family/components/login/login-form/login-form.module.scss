@@ -21,15 +21,14 @@
 
   @media(min-width: $breakpointL) {
     display: flex;
-
     gap: 10%;
   }
 
   &Header {
     margin-top: var(--padding);
 
+
     line-height: 1.25;
-    word-break: break-word;
     font-size: 2rem;
 
     @media (min-width: $breakpointXL) {

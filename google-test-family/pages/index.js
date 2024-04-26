@@ -8,7 +8,7 @@ import classes from "./index.module.scss";
 
 export default function Home() {
 
-  const router = useRouter()
+  const router = useRouter();
 
 // setTimeout(() => {
 //     router.push("/login");
