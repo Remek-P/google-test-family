@@ -64,6 +64,9 @@
   transition: var(--transition);
   pointer-events: none;
 }
+.inputContainerEmail::before:user-invalid, .inputContainerPassword::before:user-invalid {
+  color: red;
+}
 .inputContainerEmail:has(input:focus)::before, .inputContainerEmail:has(input:not(:placeholder-shown))::before, .inputContainerPassword:has(input:focus)::before, .inputContainerPassword:has(input:not(:placeholder-shown))::before {
   top: 11.5%;
   padding-inline: 2px;
@@ -72,6 +75,9 @@
   font-weight: 500;
   color: #3da5fe;
   transition: var(--transition);
+}
+.inputContainerEmail:has(input:user-invalid)::before, .inputContainerPassword:has(input:user-invalid)::before {
+  color: red;
 }
 .inputContainerEmail input, .inputContainerPassword input {
   width: 100%;
@@ -87,6 +93,9 @@
 .inputContainerEmail input:focus, .inputContainerPassword input:focus {
   outline: unset;
   border: 1px solid #065fd4;
+}
+.inputContainerEmail input:user-invalid, .inputContainerPassword input:user-invalid {
+  border-color: red;
 }
 .inputContainerEmail input::placeholder, .inputContainerPassword input::placeholder {
   color: transparent;

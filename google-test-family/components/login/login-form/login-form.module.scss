@@ -82,6 +82,10 @@
       transition: var(--transition);
 
       pointer-events: none;
+
+      &:user-invalid {
+        color: red;
+      }
     }
 
     &:has(input:focus)::before,
@@ -96,6 +100,10 @@
       color: $color-sign-in-text-dark;
 
       transition: var(--transition);
+    }
+
+    &:has(input:user-invalid)::before {
+      color: $color-danger;
     }
 
     input {
@@ -116,6 +124,10 @@
       &:focus {
         outline: unset;
         border: 1px solid $color-sign-in-text-light;
+      }
+
+      &:user-invalid {
+        border-color: $color-danger;
       }
 
       &::placeholder {

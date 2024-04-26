@@ -26,7 +26,7 @@ function LoginForm() {
   }
 
   return (
-      <form className={classes.loginForm} name="login" id="fomr" onSubmit={handleClick}>
+      <form className={classes.loginForm} name="login" id="form" onSubmit={handleClick}>
 
         <div className={classes.loginFormContainerCompany}>
 

@@ -1,14 +1,17 @@
 import AsideSection from "@/components/aside-section/aside-section";
 import MainSection from "@/components/main-section/main-section";
+import Navigation from "@/components/navigation/navigation";
+
+import {useRouter} from "next/navigation";
 
 import classes from "./index.module.scss";
-import Navigation from "@/components/navigation/navigation";
 
 export default function Home() {
 
+  const router = useRouter()
 
 // setTimeout(() => {
-//     setIsOpen(true)
+//     router.push("/login");
 //   }, 1000);
 
   return (
