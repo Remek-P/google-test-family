@@ -6,6 +6,10 @@
   --margin: 40px;
   --padding: 24px;
 
+  @media (max-width: $breakpointM) {
+    margin-top: 30%;
+  }
+
   padding: var(--padding) var(--padding) 60px var(--padding);
 
   @media (min-width: $breakpointL) {

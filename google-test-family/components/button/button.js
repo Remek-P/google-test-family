@@ -1,8 +1,14 @@
 import classes from "./button.module.scss";
 
-function Button({ onClick, children, btnClass = "light" }) {
+function Button({
+                  children,
+                  onClick = null,
+                  form = null,
+                  type = "button",
+                  btnClass = "light",
+}) {
   return (
-      <button className={classes[btnClass]} onClick={onClick}>
+      <button type={type} className={classes[btnClass]} onClick={onClick} form={form}>
         { children }
       </button>
   );

@@ -2,14 +2,31 @@ import Button from "@/components/button/button";
 import MyLink from "@/components/my-link/my-link";
 
 import classes from "./login-form.module.scss";
+import {useRef, useState} from "react";
 
 function LoginForm() {
 
   const emailLabel = "Adres e-mail lub telefon";
   const passwordLabel = "Wpisz hasło";
 
+  const login = useRef(null);
+  const password = useRef(null);
+
+  const [validLogin, setValidLogin] = useState(emailLabel);
+  const [validPassword, setValidPassword] = useState(passwordLabel)
+
+  const a = () => {
+    return null
+  }
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    if (login.current.value === "") setValidLogin("Wpisz adres e-mail lub telefon");
+    if (password.current.value === "") setValidPassword("Nie zapominaj o haśle");
+  }
+
   return (
-      <div className={classes.loginForm}>
+      <form className={classes.loginForm} name="login" id="fomr" onSubmit={handleClick}>
 
         <div className={classes.loginFormContainerCompany}>
 
@@ -39,11 +56,13 @@ function LoginForm() {
 
 
           <div className={classes.inputContainerEmail}
-               data-label={emailLabel}>
+               data-label={validLogin}>
             <label className="visually-hidden"
                    htmlFor="email">
-              {emailLabel}</label>
+              {emailLabel}
+            </label>
             <input id="email"
+                   ref={login}
                    name="email"
                    type="email"
                    placeholder={emailLabel}
@@ -52,11 +71,13 @@ function LoginForm() {
           </div>
 
           <div className={classes.inputContainerPassword}
-               data-label={passwordLabel}>
+               data-label={validPassword}>
             <label className="visually-hidden"
                    htmlFor="password">
-              {passwordLabel}</label>
+              {passwordLabel}
+            </label>
             <input id="password"
+                   ref={password}
                    name="password"
                    type="password"
                    placeholder={passwordLabel}
@@ -65,21 +86,21 @@ function LoginForm() {
           </div>
 
           {/*Todo: dodać linki*/}
-          <MyLink where="/" linkClass="regular" >Nie pamiętasz danych?</MyLink>
+          <MyLink where="/" linkClass="regular">Nie pamiętasz danych?</MyLink>
 
           <div className={classes.inputContainerOther}>
             <p>To nie Twój komputer? Aby się zalogować, użyj okna prywatnego.</p>
-            <MyLink where="/" linkClass="regular" >Dowiedz się więcej o używaniu trybu gościa</MyLink>
+            <MyLink where="/" linkClass="regular">Dowiedz się więcej o używaniu trybu gościa</MyLink>
           </div>
 
           <div className={classes.inputContainerButtons}>
-            <MyLink where="/" linkClass="full" >Utwórz&nbsp;konto</MyLink>
-            <Button btnClass="full" onClick={null} children="Zaloguj" />
+            <MyLink where="/" linkClass="full">Utwórz&nbsp;konto</MyLink>
+            <Button key="submit" type="submit" btnClass="full" children="Zaloguj" form="form"/>
           </div>
 
         </div>
 
-      </div>
+      </form>
   );
 }
 
