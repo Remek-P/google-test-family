@@ -1,28 +1,20 @@
 import Button from "@/components/button/button";
 import MyLink from "@/components/my-link/my-link";
 
+import {useRouter} from "next/navigation";
+
 import classes from "./login-form.module.scss";
-import {useRef, useState} from "react";
 
 function LoginForm() {
+
+  const router = useRouter();
 
   const emailLabel = "Adres e-mail lub telefon";
   const passwordLabel = "Wpisz hasło";
 
-  const login = useRef(null);
-  const password = useRef(null);
-
-  const [validLogin, setValidLogin] = useState(emailLabel);
-  const [validPassword, setValidPassword] = useState(passwordLabel)
-
-  const a = () => {
-    return null
-  }
-
   const handleClick = (e) => {
     e.preventDefault();
-    if (login.current.value === "") setValidLogin("Wpisz adres e-mail lub telefon");
-    if (password.current.value === "") setValidPassword("Nie zapominaj o haśle");
+    router.push("/logged");
   }
 
   return (
@@ -56,13 +48,12 @@ function LoginForm() {
 
 
           <div className={classes.inputContainerEmail}
-               data-label={validLogin}>
+               data-label={emailLabel}>
             <label className="visually-hidden"
                    htmlFor="email">
               {emailLabel}
             </label>
             <input id="email"
-                   ref={login}
                    name="email"
                    type="email"
                    placeholder={emailLabel}
@@ -71,13 +62,12 @@ function LoginForm() {
           </div>
 
           <div className={classes.inputContainerPassword}
-               data-label={validPassword}>
+               data-label={passwordLabel}>
             <label className="visually-hidden"
                    htmlFor="password">
               {passwordLabel}
             </label>
             <input id="password"
-                   ref={password}
                    name="password"
                    type="password"
                    placeholder={passwordLabel}
@@ -95,7 +85,11 @@ function LoginForm() {
 
           <div className={classes.inputContainerButtons}>
             <MyLink where="/" linkClass="full">Utwórz&nbsp;konto</MyLink>
-            <Button key="submit" type="submit" btnClass="full" children="Zaloguj" form="form"/>
+            <Button type="submit"
+                    btnClass="full"
+                    children="Zaloguj"
+                    form="form"
+            />
           </div>
 
         </div>
