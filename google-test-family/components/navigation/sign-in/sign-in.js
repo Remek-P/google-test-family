@@ -1,8 +1,9 @@
 import classes from "./signIn.module.scss";
+import Link from "next/link";
 
 function SignIn() {
   return (
-      <div className={classes.signIn}>
+      <Link href="/login" className={classes.signIn}>
         <div>
           <svg xmlns="http://www.w3.org/2000/svg"
                height="24"
@@ -17,7 +18,7 @@ function SignIn() {
           </svg>
         </div>
         <span>Sign&nbsp;in</span>
-      </div>
+      </Link>
   );
 }
 
