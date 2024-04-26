@@ -73,28 +73,4 @@
       line-height: 1.42857143;
     }
   }
-
-  &Link {
-    border-radius: 500px;
-
-    line-height: 1.5;
-    font-size: 14px;
-    font-weight: 400;
-    color: $color-sign-in-text-light;
-    cursor: pointer;
-
-    @media (prefers-color-scheme: dark) {
-      border-color: $color-sign-in-dark;
-      color: $color-sign-in-text-dark;
-    }
-
-    &:hover {
-      background-color: $color-button-hover-light;
-    }
-  }
-
-  &Link {
-    padding: 11px;
-    text-decoration: none;
-  }
 }

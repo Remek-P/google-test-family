@@ -1,6 +1,7 @@
-import classes from "./login-header.module.scss";
-import Link from "next/link";
 import Button from "@/components/button/button";
+import MyLink from "@/components/my-link/my-link";
+
+import classes from "./login-header.module.scss";
 
 function LoginHeader({ setShowHeader }) {
   return (
@@ -34,9 +35,9 @@ function LoginHeader({ setShowHeader }) {
 
         <div className={classes.headerContainerAction}>
 
-          <Link href={"https://support.google.com/accounts?p=new-si-ui"} className={classes.headerLink}>
+          <MyLink where="https://support.google.com/accounts?p=new-si-ui" linkClass="full" >
             Więcej&nbsp;informacji
-          </Link>
+          </MyLink>
 
           <Button onClick={() => {setShowHeader(false)}}>
             Zamknij

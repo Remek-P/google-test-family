@@ -1,0 +1,35 @@
+@import "../../styles/variables/colours";
+
+.regular, .full {
+  line-height: 1.5;
+  font-size: 0.875rem;
+  color: $color-sign-in-text-light;
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+.regular {
+  font-weight: 500;
+  letter-spacing: 0.25px;
+}
+
+.full {
+
+  --position: 13px;
+
+  margin-left: calc(var(--position) * -1);
+  border-radius: 500px;
+  padding: 11px var(--position);
+
+  font-weight: 400;
+
+  &:hover {
+    background-color: $color-button-hover-light;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-sign-in-dark;
+    color: $color-sign-in-text-dark;
+  }
+}

@@ -1,0 +1,31 @@
+.regular, .full {
+  line-height: 1.5;
+  font-size: 0.875rem;
+  color: #065fd4;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.regular {
+  font-weight: 500;
+  letter-spacing: 0.25px;
+}
+
+.full {
+  --position: 13px;
+  margin-left: calc(var(--position) * -1);
+  border-radius: 500px;
+  padding: 11px var(--position);
+  font-weight: 400;
+}
+.full:hover {
+  background-color: #f0f4f9;
+}
+@media (prefers-color-scheme: dark) {
+  .full {
+    border-color: #3f3f3f;
+    color: #3da5fe;
+  }
+}
+
+/*# sourceMappingURL=my-link.module.css.map */

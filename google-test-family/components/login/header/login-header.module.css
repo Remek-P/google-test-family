@@ -57,26 +57,5 @@
   font-weight: 400;
   line-height: 1.42857143;
 }
-.headerLink {
-  border-radius: 500px;
-  line-height: 1.5;
-  font-size: 14px;
-  font-weight: 400;
-  color: #065fd4;
-  cursor: pointer;
-}
-@media (prefers-color-scheme: dark) {
-  .headerLink {
-    border-color: #3f3f3f;
-    color: #3da5fe;
-  }
-}
-.headerLink:hover {
-  background-color: #f0f4f9;
-}
-.headerLink {
-  padding: 11px;
-  text-decoration: none;
-}
 
 /*# sourceMappingURL=login-header.module.css.map */
