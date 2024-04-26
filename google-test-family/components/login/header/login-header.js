@@ -1,5 +1,6 @@
 import classes from "./login-header.module.scss";
 import Link from "next/link";
+import Button from "@/components/button/button";
 
 function LoginHeader({ setShowHeader }) {
   return (
@@ -36,9 +37,10 @@ function LoginHeader({ setShowHeader }) {
           <Link href={"https://support.google.com/accounts?p=new-si-ui"} className={classes.headerLink}>
             Więcej&nbsp;informacji
           </Link>
-          <button className={classes.headerButton} onClick={() => {setShowHeader(false)}}>
+
+          <Button onClick={() => {setShowHeader(false)}}>
             Zamknij
-          </button>
+          </Button>
 
         </div>
 

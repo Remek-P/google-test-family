@@ -1,0 +1,55 @@
+@import "../../styles/variables/colours";
+
+.full,
+.light {
+  padding: 9px 24px;
+
+  border-radius: 500px;
+
+  line-height: 1.5;
+  font-size: 0.875rem;
+  font-weight: 400;
+
+  cursor: pointer;
+}
+
+.light {
+  border: 1px solid $color-search-button-dark;
+
+  color: $color-sign-in-text-light;
+
+  &:hover {
+    background-color: $color-button-hover-light;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-sign-in-dark;
+    color: $color-sign-in-text-dark;
+  }
+}
+
+.full {
+  --transition: box-shadow .28s cubic-bezier(.4,0,.2,1);
+
+  border: 1px solid $color-login-link-light;
+  background-color: $color-login-link-light;
+
+  color: $color-button-font-light;
+
+  &:hover {
+    border: 1px solid $color-button-font-light-hover;
+    background-color: $color-button-font-light-hover;
+    box-shadow:
+            rgba(60, 64, 67, 0.3) 0 1px 2px 0,
+            rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
+
+    transition: var(--transition);
+  }
+
+  transition: var(--transition);
+
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-sign-in-dark;
+    color: $color-sign-in-text-dark;
+  }
+}

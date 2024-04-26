@@ -2,7 +2,15 @@
 @import "../../../styles/variables/breakpoints";
 
 .loginForm {
-  padding: 24px;
+
+  --margin: 40px;
+  --padding: 24px;
+
+  padding: var(--padding) var(--padding) 60px var(--padding);
+
+  @media (min-width: $breakpointL) {
+    padding: var(--padding);
+  }
 
   background-color: white;
   border-radius: 30px;
@@ -14,6 +22,8 @@
   }
 
   &Header {
+    margin-top: var(--padding);
+
     line-height: 1.25;
     word-break: break-word;
     font-size: 2rem;
@@ -23,8 +33,14 @@
     }
   }
 
+  &Paragraph {
+    margin-top: 16px;
+  }
+
   &Container {
     &Company {
+
+      margin-bottom: var(--margin);
 
       @media (min-width: $breakpointL) {
         display: flex;
@@ -33,23 +49,32 @@
     }
 
     &Action {
+
+      & > a {
+        padding-bottom: 3px;
+        padding-top: 9px;
+
+        font-size: 0.88rem;
+        font-weight: 500;
+        letter-spacing: 0.25px;
+      }
     }
+  }
+
+  & a {
+    text-decoration: none;
+    color: $color-login-link-light;
   }
 }
 
 .inputContainer {
+
   &Email,
   &Password {
     position: relative;
-    padding-block: 4px;
+    padding-block: 8px;
 
-    --transition: 0.3s;
-
-    & > input:focus {
-      outline: unset;
-      border: 1px solid $color-sign-in-text-light;
-    }
-
+    --transition: 0.1s;
 
     &::before {
       content: attr(data-label);
@@ -66,11 +91,13 @@
 
     &:has(input:focus)::before,
     &:has(input:not(:placeholder-shown))::before {
-      top: 8%;
+      top: 11.5%;
+      padding-inline: 2px;
 
       background-color: white;
 
       font-size: 0.7rem;
+      font-weight: 500;
       color: $color-sign-in-text-dark;
 
       transition: var(--transition);
@@ -79,7 +106,6 @@
     input {
       width: 100%;
       height: 28px;
-      //margin: 1px 1px 0 1px;
       padding: 25px 15px;
 
       background-color: transparent;
@@ -92,15 +118,42 @@
 
       text-align: left;
 
+      &:focus {
+        outline: unset;
+        border: 1px solid $color-sign-in-text-light;
+      }
+
       &::placeholder {
         color: transparent;
       }
     }
   }
-}
 
-.buttonsContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  &Other {
+    margin-top: var(--margin);
+
+    & > * {
+      padding-bottom: 9px;
+
+      font-size: 0.875rem;
+    }
+
+    & > p {
+
+      font-weight: 400;
+      letter-spacing: 0;
+      line-height: 1.42857143;
+    }
+
+    & > a {
+      font-weight: 500;
+    }
+  }
+
+  &Buttons {
+    margin-top: var(--margin);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

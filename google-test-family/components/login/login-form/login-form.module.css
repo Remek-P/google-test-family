@@ -1,7 +1,14 @@
 .loginForm {
-  padding: 24px;
+  --margin: 40px;
+  --padding: 24px;
+  padding: var(--padding) var(--padding) 60px var(--padding);
   background-color: white;
   border-radius: 30px;
+}
+@media (min-width: 810px) {
+  .loginForm {
+    padding: var(--padding);
+  }
 }
 @media (min-width: 810px) {
   .loginForm {
@@ -10,6 +17,7 @@
   }
 }
 .loginFormHeader {
+  margin-top: var(--padding);
   line-height: 1.25;
   word-break: break-word;
   font-size: 2rem;
@@ -19,20 +27,34 @@
     font-size: 2.25rem;
   }
 }
+.loginFormParagraph {
+  margin-top: 16px;
+}
+.loginFormContainerCompany {
+  margin-bottom: var(--margin);
+}
 @media (min-width: 810px) {
   .loginFormContainerCompany {
     display: flex;
     flex-direction: column;
   }
 }
+.loginFormContainerAction > a {
+  padding-bottom: 3px;
+  padding-top: 9px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+}
+.loginForm a {
+  text-decoration: none;
+  color: #0b57d0;
+}
+
 .inputContainerEmail, .inputContainerPassword {
   position: relative;
-  padding-block: 4px;
-  --transition: 0.3s;
-}
-.inputContainerEmail > input:focus, .inputContainerPassword > input:focus {
-  outline: unset;
-  border: 1px solid #065fd4;
+  padding-block: 8px;
+  --transition: 0.1s;
 }
 .inputContainerEmail::before, .inputContainerPassword::before {
   content: attr(data-label);
@@ -45,9 +67,11 @@
   pointer-events: none;
 }
 .inputContainerEmail:has(input:focus)::before, .inputContainerEmail:has(input:not(:placeholder-shown))::before, .inputContainerPassword:has(input:focus)::before, .inputContainerPassword:has(input:not(:placeholder-shown))::before {
-  top: 8%;
+  top: 11.5%;
+  padding-inline: 2px;
   background-color: white;
   font-size: 0.7rem;
+  font-weight: 500;
   color: #3da5fe;
   transition: var(--transition);
 }
@@ -62,11 +86,30 @@
   font-size: 1rem;
   text-align: left;
 }
+.inputContainerEmail input:focus, .inputContainerPassword input:focus {
+  outline: unset;
+  border: 1px solid #065fd4;
+}
 .inputContainerEmail input::placeholder, .inputContainerPassword input::placeholder {
   color: transparent;
 }
-
-.buttonsContainer {
+.inputContainerOther {
+  margin-top: var(--margin);
+}
+.inputContainerOther > * {
+  padding-bottom: 9px;
+  font-size: 0.875rem;
+}
+.inputContainerOther > p {
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.42857143;
+}
+.inputContainerOther > a {
+  font-weight: 500;
+}
+.inputContainerButtons {
+  margin-top: var(--margin);
   display: flex;
   justify-content: space-between;
   align-items: center;

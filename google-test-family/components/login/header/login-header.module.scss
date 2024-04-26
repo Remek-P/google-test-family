@@ -74,8 +74,7 @@
     }
   }
 
-  &Link,
-  &Button {
+  &Link {
     border-radius: 500px;
 
     line-height: 1.5;
@@ -90,19 +89,12 @@
     }
 
     &:hover {
-      --hover_color: #f0f4f9;
-
-      background-color: var(--hover_color);
+      background-color: $color-button-hover-light;
     }
   }
 
   &Link {
     padding: 11px;
     text-decoration: none;
-  }
-
-  &Button {
-    padding: 9px 24px;
-    border: 1px solid $color-search-button-dark;
   }
 }

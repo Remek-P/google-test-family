@@ -1,5 +1,6 @@
 import classes from "./login-form.module.scss";
 import Link from "next/link";
+import Button from "@/components/button/button";
 
 function LoginForm() {
 
@@ -28,7 +29,7 @@ function LoginForm() {
           </svg>
 
           <h2 className={classes.loginFormHeader}>Zaloguj&nbsp;się</h2>
-          <p>Przejdź do YouTube</p>
+          <p className={classes.loginFormParagraph}>Przejdź do YouTube</p>
 
         </div>
 
@@ -62,14 +63,17 @@ function LoginForm() {
             />
           </div>
 
+          {/*Todo: dodać linki*/}
           <Link href="/">Nie pamiętasz danych?</Link>
 
-          <p>To nie Twój komputer? Aby się zalogować, użyj okna prywatnego.</p>
-          <Link href="/">Dowiedz się więcej o używaniu trybu gościa</Link>
+          <div className={classes.inputContainerOther}>
+            <p>To nie Twój komputer? Aby się zalogować, użyj okna prywatnego.</p>
+            <Link href="/">Dowiedz się więcej o używaniu trybu gościa</Link>
+          </div>
 
-          <div className={classes.buttonsContainer}>
+          <div className={classes.inputContainerButtons}>
             <Link href="/">Utwórz&nbsp;konto</Link>
-            <button>Zaloguj</button>
+            <Button btnClass="full" onClick={null} children="Zaloguj" />
           </div>
 
         </div>

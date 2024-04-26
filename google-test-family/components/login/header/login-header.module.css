@@ -57,7 +57,7 @@
   font-weight: 400;
   line-height: 1.42857143;
 }
-.headerLink, .headerButton {
+.headerLink {
   border-radius: 500px;
   line-height: 1.5;
   font-size: 14px;
@@ -66,22 +66,17 @@
   cursor: pointer;
 }
 @media (prefers-color-scheme: dark) {
-  .headerLink, .headerButton {
+  .headerLink {
     border-color: #3f3f3f;
     color: #3da5fe;
   }
 }
-.headerLink:hover, .headerButton:hover {
-  --hover_color: #f0f4f9;
-  background-color: var(--hover_color);
+.headerLink:hover {
+  background-color: #f0f4f9;
 }
 .headerLink {
   padding: 11px;
   text-decoration: none;
-}
-.headerButton {
-  padding: 9px 24px;
-  border: 1px solid #222222;
 }
 
 /*# sourceMappingURL=login-header.module.css.map */
