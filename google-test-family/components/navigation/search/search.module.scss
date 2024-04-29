@@ -1,21 +1,33 @@
 @import "../../../styles/variables/colours";
+@import "../../../styles/variables/breakpoints";
 
 .search {
   display: flex;
   flex-grow: 1;
-  justify-content: center;
+  justify-content: right;
   align-items: stretch;
   max-width: min(45%, 650px);
 
+  @media (max-width: $breakpointML) {
+    margin-left: auto;
+  }
 
   &Input, &Button {
-    all: unset;
-    padding-block: 6px;
-    padding-inline: 16px;
-    border: 1px solid $color-search-border-light;
+    border: unset;
 
-    @media (prefers-color-scheme: dark) {
-      border-color: $color-search-border-dark;
+    @media (min-width: $breakpointML) {
+      padding-block: 6px;
+      padding-inline: 16px;
+      border: 1px solid $color-search-border-light;
+
+      @media (prefers-color-scheme: dark) {
+        border-color: $color-search-border-dark;
+      }
+    }
+
+    @media (min-width: $breakpointML) {
+      justify-content: center;
+      margin-left: 0;
     }
   }
 
@@ -30,19 +42,27 @@
     @media (prefers-color-scheme: dark) {
       color: $color-text-dark;
     }
+
+    @media (max-width: $breakpointML) {
+      display: none;
+    }
   }
 
   &Button {
-    padding-inline: 19px;
-    border-top-right-radius: 500px;
-    border-bottom-right-radius: 500px;
-    border-left: none;
-    background-color: $color-search-button-light;
+    border-radius: 500px;
+
     cursor: pointer;
     position: relative;
 
     @media (prefers-color-scheme: dark) {
       background-color: $color-search-button-dark;
+    }
+
+    @media (min-width: $breakpointML) {
+      padding-inline: 19px;
+      border-left: none;
+      border-radius: 0 500px 500px 0;
+      background-color: $color-search-button-light;
     }
 
     &:hover::after {

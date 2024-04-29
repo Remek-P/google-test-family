@@ -1,0 +1,22 @@
+.navigationContainer, .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigationContainer {
+  padding-block: 10px;
+  padding-inline: 14px;
+}
+@media (min-width: 700px) {
+  .navigationContainer {
+    gap: 20px;
+  }
+}
+
+.wrapper {
+  flex-shrink: 0;
+  gap: 14px;
+}
+
+/*# sourceMappingURL=navigation.module.css.map */
