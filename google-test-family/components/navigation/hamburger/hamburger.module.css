@@ -1,18 +1,7 @@
-.hamburgerContainer:focus-within, .hamburgerSVG:focus-within {
-  border-radius: 500px;
-  background-color: #e5e5e5;
-}
-@media (prefers-color-scheme: dark) {
-  .hamburgerContainer:focus-within, .hamburgerSVG:focus-within {
-    fill: #fff;
-    background-color: #272a2e;
-  }
-}
 .hamburgerContainer {
-  margin: 0;
   padding: 0;
   border: 0;
-  aspect-ratio: 1;
+  cursor: pointer;
 }
 .hamburgerSVG {
   width: 100%;
@@ -22,6 +11,16 @@
 @media (prefers-color-scheme: dark) {
   .hamburgerSVG {
     fill: #fff;
+  }
+}
+.hamburgerSVG:hover, .hamburgerSVG:focus-within {
+  border-radius: 500px;
+  background-color: #e5e5e5;
+}
+@media (prefers-color-scheme: dark) {
+  .hamburgerSVG:hover, .hamburgerSVG:focus-within {
+    fill: #fff;
+    background-color: #272a2e;
   }
 }
 

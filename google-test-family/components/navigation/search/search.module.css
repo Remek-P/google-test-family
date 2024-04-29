@@ -10,6 +10,11 @@
     margin-left: auto;
   }
 }
+.searchInput:focus, .searchButton:focus {
+  outline: 0;
+  border-color: #065fd4;
+  z-index: 1;
+}
 @media (min-width: 700px) {
   .searchInput, .searchButton {
     padding-block: 6px;
@@ -34,7 +39,6 @@
   font-family: Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 400;
-  z-index: 1;
 }
 @media (prefers-color-scheme: dark) {
   .searchInput {
@@ -45,10 +49,6 @@
   .searchInput {
     display: none;
   }
-}
-.searchInput:focus {
-  outline: 0;
-  border-color: #3da5fe;
 }
 .searchButton {
   border-radius: 500px;
