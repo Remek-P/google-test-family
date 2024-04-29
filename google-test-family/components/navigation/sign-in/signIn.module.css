@@ -13,6 +13,7 @@
   font-weight: 500;
   color: #065fd4;
   cursor: pointer;
+  text-decoration: none;
 }
 @media (prefers-color-scheme: dark) {
   .signIn {
@@ -20,7 +21,7 @@
     color: #3da5fe;
   }
 }
-.signIn:hover {
+.signIn:hover, .signIn:focus-visible {
   background-color: #def1ff;
   border: 1px solid #def1ff;
 }

@@ -1,22 +1,12 @@
 @import "../../../styles/variables/colours";
 
 .settings {
-  all: unset;
   width: 100%;
   height: 100%;
-  position: relative;
-
-  &:hover::after {
-    content: attr(data-tooltiptext);
-    position: absolute;
-    top: 35px;
-    translate: -65% 50%;
-    padding: 10px;
-    border-radius: 4px;
-    background-color: #606060;
-    color: #fff;
-    font-size: 0.7rem;
-  }
+  margin: 0;
+  padding: 0;
+  border: 0;
+  position: relative; //for tooltip
 
   &SVG {
     cursor: pointer;

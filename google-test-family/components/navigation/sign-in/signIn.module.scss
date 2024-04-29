@@ -15,13 +15,15 @@
   font-weight: 500;
   color: $color-sign-in-text-light;
   cursor: pointer;
+  text-decoration: none;
 
   @media (prefers-color-scheme: dark) {
     border-color: $color-sign-in-dark;
     color: $color-sign-in-text-dark;
   }
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     background-color: $color-sign-in-light;
     border: 1px solid $color-sign-in-light;
   }

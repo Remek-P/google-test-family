@@ -1,7 +1,10 @@
 @import "../../../styles/variables/colours";
 
 .logo {
-  cursor: pointer;
+  &:hover,
+  &:focus-visible {
+    scale: 110%;
+  }
 
   &SVG {
     width: 100%;

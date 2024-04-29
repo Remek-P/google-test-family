@@ -1,5 +1,5 @@
-.logo {
-  cursor: pointer;
+.logo:hover, .logo:focus-visible {
+  scale: 110%;
 }
 .logoSVG {
   width: 100%;

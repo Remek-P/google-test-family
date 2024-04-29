@@ -13,7 +13,6 @@
   }
 
   &Input, &Button {
-    border: unset;
 
     @media (min-width: $breakpointML) {
       padding-block: 6px;
@@ -38,6 +37,8 @@
     font-size: 16px;
     font-weight: 400;
 
+    z-index: 1;
+
     @media (prefers-color-scheme: dark) {
       color: $color-text-dark;
     }
@@ -45,13 +46,18 @@
     @media (max-width: $breakpointML) {
       display: none;
     }
+
+    &:focus, {
+      outline: 0;
+      border-color: #3da5fe;
+    }
   }
 
   &Button {
     border-radius: 500px;
 
     cursor: pointer;
-    position: relative;
+    position: relative; //for tooltip
 
     @media (prefers-color-scheme: dark) {
       background-color: $color-search-button-dark;
@@ -64,16 +70,10 @@
       background-color: $color-search-button-light;
     }
 
+    //tooltip position correction
     &:hover::after {
-      content: attr(data-tooltiptext);
-      position: absolute;
       top: 40px;
       translate: -30% 50%;
-      padding: 10px;
-      border-radius: 4px;
-      background-color: #606060;
-      color: #fff;
-      font-size: 0.7rem;
     }
 
     &:hover {

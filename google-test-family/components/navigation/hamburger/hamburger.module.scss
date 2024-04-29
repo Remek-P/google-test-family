@@ -2,8 +2,24 @@
 
 .hamburger {
 
+  &Container,
+  &SVG {
+    &:focus-within {
+      border-radius: 500px;
+      background-color: $color-hamburger-hover-light;
+
+      @media (prefers-color-scheme: dark) {
+        fill: #fff;
+        background-color: $color-hamburger-hover-dark;
+      }
+    }
+  }
+
   &Container {
-    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    aspect-ratio: 1;
   }
 
   &SVG {
@@ -13,16 +29,6 @@
 
     @media (prefers-color-scheme: dark) {
       fill: #fff;
-    }
-
-    &:hover {
-      border-radius: 500px;
-      background-color: $color-hamburger-hover-light;
-
-      @media (prefers-color-scheme: dark) {
-        fill: #fff;
-        background-color: $color-hamburger-hover-dark;
-      }
     }
   }
 }

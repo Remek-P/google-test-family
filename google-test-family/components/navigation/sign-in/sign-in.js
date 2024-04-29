@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function SignIn() {
   return (
-      <Link href="/login" className={classes.signIn}>
+      <Link href="/login" className={classes.signIn} tabIndex="0">
         <div>
           <svg xmlns="http://www.w3.org/2000/svg"
                height="24"

@@ -3,7 +3,7 @@ function Search() {
   return (
       <div className={classes.search}>
         <input className={classes.searchInput} type="text" name="search" placeholder="Search" id="search"/>
-        <button className={classes.searchButton} data-tooltiptext="Search">
+        <button className={`${classes.searchButton} tooltip`} data-tooltiptext="Search">
             <svg xmlns="http://www.w3.org/2000/svg"
                  viewBox="0 0 24 24"
                  height="24"

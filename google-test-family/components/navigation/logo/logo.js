@@ -1,7 +1,8 @@
 import classes from "./logo.module.scss";
+import Link from "next/link";
 function Logo() {
   return (
-      <div className={classes.logo}>
+      <Link href="/" className={classes.logo}>
           <svg xmlns="http://www.w3.org/2000/svg"
                className={classes.logoSVG}
                viewBox="0 0 90 20"
@@ -53,7 +54,7 @@ function Logo() {
               </g>
             </svg>
           </svg>
-      </div>
+      </Link>
   );
 }
 
