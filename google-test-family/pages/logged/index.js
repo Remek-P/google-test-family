@@ -1,7 +1,7 @@
 function Index() {
   return (
       <div>
-        Gamoń - właśnie dałeś się oszukać! Zadzwoń do mnie ciołku.
+        Nie dość, że to był szemrany link, który mógł robić dziwne rzeczy, to jeszcze haker dostałby dane logowania!
       </div>
   );
 }

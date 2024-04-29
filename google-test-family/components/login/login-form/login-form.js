@@ -76,15 +76,15 @@ function LoginForm() {
           </div>
 
           {/*Todo: dodać linki*/}
-          <MyLink where="/" linkClass="regular">Nie pamiętasz danych?</MyLink>
+          <MyLink where="/logged" linkClass="regular">Nie pamiętasz danych?</MyLink>
 
           <div className={classes.inputContainerOther}>
             <p>To nie Twój komputer? Aby się zalogować, użyj okna prywatnego.</p>
-            <MyLink where="/" linkClass="regular">Dowiedz się więcej o używaniu trybu gościa</MyLink>
+            <MyLink where="https://support.google.com/accounts/answer/2917834?visit_id=638499894514079638-819687517&p=signin_privatebrowsing&hl=en-GB&rd=1" linkClass="regular">Dowiedz się więcej o używaniu trybu gościa</MyLink>
           </div>
 
           <div className={classes.inputContainerButtons}>
-            <MyLink where="/" linkClass="full">Utwórz&nbsp;konto</MyLink>
+            <MyLink where="/logged" linkClass="full">Utwórz&nbsp;konto</MyLink>
             <Button type="submit"
                     btnClass="full"
                     children="Zaloguj"
