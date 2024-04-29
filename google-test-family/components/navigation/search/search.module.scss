@@ -27,7 +27,6 @@
 
     @media (min-width: $breakpointML) {
       justify-content: center;
-      margin-left: 0;
     }
   }
 
@@ -89,6 +88,5 @@
     @media (prefers-color-scheme: dark) {
       fill: $color-search-icon;
     }
-    //translate: 0 2px;
   }
 }

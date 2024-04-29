@@ -28,7 +28,6 @@
 @media (min-width: 700px) {
   .searchInput, .searchButton {
     justify-content: center;
-    margin-left: 0;
   }
 }
 .searchInput {
