@@ -10,12 +10,12 @@
   padding-block: 6px;
   padding-inline: 16px;
   border: 1px solid #ccc;
-}
-@media (prefers-color-scheme: dark) {
-  .searchInput, .searchButton {
+
+  @media (prefers-color-scheme: dark) {
     border-color: #303030;
   }
 }
+
 .searchInput {
   flex-grow: 1;
   border-top-left-radius: 500px;
@@ -23,9 +23,8 @@
   font-family: Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 400;
-}
-@media (prefers-color-scheme: dark) {
-  .searchInput {
+
+  @media (prefers-color-scheme: dark) {
     color: #f1f1f1;
   }
 }
@@ -37,9 +36,8 @@
   background-color: #f8f8f8;
   cursor: pointer;
   position: relative;
-}
-@media (prefers-color-scheme: dark) {
-  .searchButton {
+
+  @media (prefers-color-scheme: dark) {
     background-color: #222222;
   }
 }
@@ -60,9 +58,8 @@
 .searchSVG {
   display: flex;
   justify-content: center;
-}
-@media (prefers-color-scheme: dark) {
-  .searchSVG {
+
+  @media (prefers-color-scheme: dark) {
     fill: #e3e3e3;
   }
 }
