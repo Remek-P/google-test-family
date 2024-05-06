@@ -68,16 +68,24 @@
       padding-inline: 19px;
       border-radius: 0 500px 500px 0;
       background-color: $color-search-button-light;
+
+      &:hover {
+        background-color: $color-search-button-hover;
+
+        &::after {
+          top: 40px;
+        }
+      }
     }
 
     //tooltip position correction
     &:hover::after {
-      top: 40px;
-      translate: -30% 50%;
+      translate: -50% 50%;
     }
 
-    &:hover {
-      background-color: $color-search-button-hover;
+
+    @media (max-width: $breakpointML) {
+      border: 0;
     }
   }
 

@@ -34,15 +34,10 @@ function isVisible() {
 function noOfPlays() {
   const random = Math.round(Math.random() * 10);
 
-  if (random < 3) {
-    return random * 3
-  }
-  if (random <= 7) {
-    return `${random * 2}K`
-  }
-  if (random <= 10) {
-    return `${random}M`
-  }
+  if (random === 0)   return 15;
+  if (random < 3)   return random * 3;
+  if (random <= 7)  return `${random * 2}K`
+  if (random <= 10) return `${random}M`
 }
 
 function calculateDateFrom(
@@ -91,6 +86,9 @@ function calculateDateFrom(
 
 const id = idGenerator();
 
+const link = "https://picsum.photos/id/";
+const size = "/168/94";
+
 export const FAKE_SIDE_SUGGESTIONS = [
   {
     id: id.next().value,
@@ -100,7 +98,7 @@ export const FAKE_SIDE_SUGGESTIONS = [
     userName: "Axel",
     noOfPlays: `${noOfPlays()} views`,
     publishedAgo: calculateDateFrom(),
-    picture: 	"https://picsum.photos/id/0/168/94",
+    picture: 	`${link}0${size}`,
   },
   {
     id: id.next().value,
@@ -110,7 +108,7 @@ export const FAKE_SIDE_SUGGESTIONS = [
     userName: "Axel",
     noOfPlays: `${noOfPlays()} views`,
     publishedAgo: calculateDateFrom(),
-    picture: 	"https://picsum.photos/id/10/168/94",
+    picture: 	`${link}10${size}`,
   },
   {
     id: id.next().value,
@@ -120,7 +118,7 @@ export const FAKE_SIDE_SUGGESTIONS = [
     userName: "Axel",
     noOfPlays: `${noOfPlays()} views`,
     publishedAgo: calculateDateFrom(),
-    picture: 	"https://picsum.photos/id/20/168/94",
+    picture: 	`${link}20${size}`,
   },
   {
     id: id.next().value,
@@ -130,7 +128,7 @@ export const FAKE_SIDE_SUGGESTIONS = [
     userName: "Axel",
     noOfPlays: `${noOfPlays()} views`,
     publishedAgo: calculateDateFrom(),
-    picture: 	"https://picsum.photos/id/30/168/94",
+    picture: 	`${link}30${size}`,
   },
   {
     id: id.next().value,
@@ -140,7 +138,7 @@ export const FAKE_SIDE_SUGGESTIONS = [
     userName: "Axel",
     noOfPlays: `${noOfPlays()} views`,
     publishedAgo: calculateDateFrom(),
-    picture: 	"https://picsum.photos/id/40/168/94",
+    picture: 	`${link}40${size}`,
   },
   {
     id: id.next().value,
@@ -150,7 +148,7 @@ export const FAKE_SIDE_SUGGESTIONS = [
     userName: "Axel",
     noOfPlays: `${noOfPlays()} views`,
     publishedAgo: calculateDateFrom(),
-    picture: 	"https://picsum.photos/id/50/168/94",
+    picture: 	`${link}50${size}`,
   },
   {
     id: id.next().value,
@@ -160,7 +158,7 @@ export const FAKE_SIDE_SUGGESTIONS = [
     userName: "Axel",
     noOfPlays: `${noOfPlays()} views`,
     publishedAgo: calculateDateFrom(),
-    picture: 	"https://picsum.photos/id/60/168/94",
+    picture: 	`${link}60${size}`,
   },
   {
     id: id.next().value,
@@ -170,7 +168,7 @@ export const FAKE_SIDE_SUGGESTIONS = [
     userName: "Axel",
     noOfPlays: `${noOfPlays()} views`,
     publishedAgo: calculateDateFrom(),
-    picture: 	"https://picsum.photos/id/70/168/94",
+    picture: 	`${link}70${size}`,
   },
   {
     id: id.next().value,
@@ -180,7 +178,7 @@ export const FAKE_SIDE_SUGGESTIONS = [
     userName: "Axel",
     noOfPlays: `${noOfPlays()} views`,
     publishedAgo: calculateDateFrom(),
-    picture: 	"https://picsum.photos/id/80/168/94",
+    picture: 	`${link}80${size}`,
   },
   {
     id: id.next().value,
@@ -190,7 +188,7 @@ export const FAKE_SIDE_SUGGESTIONS = [
     userName: "Axel",
     noOfPlays: `${noOfPlays()} views`,
     publishedAgo: calculateDateFrom(),
-    picture: 	"https://picsum.photos/id/90/168/94",
+    picture: 	`${link}90${size}`,
   },
   {
     id: id.next().value,
@@ -200,7 +198,7 @@ export const FAKE_SIDE_SUGGESTIONS = [
     userName: "Axel",
     noOfPlays: `${noOfPlays()} views`,
     publishedAgo: calculateDateFrom(),
-    picture: 	"https://picsum.photos/id/100/168/94",
+    picture: 	`${link}100${size}`,
   },
   {
     id: id.next().value,
@@ -210,7 +208,7 @@ export const FAKE_SIDE_SUGGESTIONS = [
     userName: "Axel",
     noOfPlays: `${noOfPlays()} views`,
     publishedAgo: calculateDateFrom(),
-    picture: 	"https://picsum.photos/id/110/168/94",
+    picture: 	`${link}110${size}`,
   }
 ]
 
@@ -222,5 +220,5 @@ export const FAKE_VIDEO = {
   userName: "Axel",
   noOfPlays: `${noOfPlays()} views`,
   publishedAgo: calculateDateFrom(),
-  picture: 	"https://picsum.photos/id/120/168/94",
+  picture: 	`${link}120${size}`,
 }

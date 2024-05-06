@@ -6,7 +6,6 @@ import SignIn from "@/components/navigation/sign-in/sign-in";
 
 import classes from "./navigation.module.scss";
 
-// TODO: mobile search is to big
 function Navigation() {
   return (
       <div className={classes.navigationContainer}>
