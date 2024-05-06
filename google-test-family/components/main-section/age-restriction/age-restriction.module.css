@@ -1,0 +1,28 @@
+.restriction {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #0f0f0f;
+}
+.restriction > svg {
+  width: 20%;
+  aspect-ratio: 1/1;
+  fill: gray;
+}
+.restrictionHeader, .restrictionText {
+  color: white;
+  font-weight: 400;
+}
+.restrictionHeader {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+.restrictionText {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+/*# sourceMappingURL=age-restriction.module.css.map */

@@ -1,0 +1,44 @@
+.restriction {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  background-color: #0f0f0f;
+
+  & > svg {
+    width: 20%;
+    aspect-ratio: 1 / 1;
+    fill: gray;
+  }
+
+  &Container {
+
+  }
+
+  &Header,
+  &Text {
+    color: white;
+    font-weight: 400;
+  }
+
+  &Header {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+
+  &Text {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  &LinkInfo {
+
+  }
+
+  &LinkLogin {
+
+  }
+}

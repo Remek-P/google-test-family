@@ -1,15 +1,22 @@
+import { useState } from "react";
+
 import Image from "next/image";
+
 import PlayButton from "@/components/main-section/play-button/play-button";
 
 import classes from "./video.module.scss";
-import {useRouter} from "next/navigation";
+import AgeRestriction from "@/components/main-section/age-restriction/age-restriction";
 
 function Video() {
 
-  const router = useRouter();
+  const [isAgeRestriction, setIsAgeRestriction] = useState(false);
+
+  const displayAgeRestriction = () => {
+    setIsAgeRestriction(true)
+  }
 
   return (
-      <div className={classes.video} onClick={() => router.push("/login")}>
+      <div className={classes.video} onClick={displayAgeRestriction}>
         <Image src={"/album-cover/album-cover-main.jpg"}
                alt={"title"}
                sizes="1280px, 50vw, 33vw"
@@ -17,9 +24,11 @@ function Video() {
                priority={true}
                style={{
                  objectFit: 'cover',
+                 cursor: "pointer",
                }}
         />
-        <PlayButton />
+        { isAgeRestriction && <AgeRestriction /> }
+        { !isAgeRestriction && <PlayButton/> }
       </div>
   );
 }
