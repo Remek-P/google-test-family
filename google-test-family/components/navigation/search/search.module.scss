@@ -72,17 +72,16 @@
       &:hover {
         background-color: $color-search-button-hover;
 
+        //tooltip position correction
         &::after {
           top: 40px;
         }
       }
     }
-
     //tooltip position correction
     &:hover::after {
       translate: -50% 50%;
     }
-
 
     @media (max-width: $breakpointML) {
       border: 0;
