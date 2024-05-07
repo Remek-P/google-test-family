@@ -1,8 +1,8 @@
-import Hamburger from "@/components/navigation/hamburger/hamburger";
 import Logo from "@/components/navigation/logo/logo";
 import Search from "@/components/navigation/search/search";
-import Settings from "@/components/navigation/settings/settings";
 import SignIn from "@/components/navigation/sign-in/sign-in";
+import Settings from "@/components/navigation/settings/settings";
+import Hamburger from "@/components/navigation/hamburger/hamburger";
 
 import classes from "./navigation.module.scss";
 

@@ -1,8 +1,14 @@
 import classes from "./search.module.scss";
+
 function Search() {
+
   return (
       <div className={classes.search}>
-        <input className={classes.searchInput} type="text" name="search" placeholder="Search" id="search"/>
+        <input className={classes.searchInput}
+               type="text"
+               name="search"
+               placeholder="Szukaj"
+               id="search"/>
         <button className={`${classes.searchButton} tooltip`} data-tooltiptext="Search">
             <svg xmlns="http://www.w3.org/2000/svg"
                  viewBox="0 0 24 24"
