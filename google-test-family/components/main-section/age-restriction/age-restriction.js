@@ -3,11 +3,6 @@ import MyLink from "@/components/my-link/my-link";
 import classes from "./age-restriction.module.scss";
 
 function AgeRestriction() {
-
-  const linkStyle = {
-    backgroundColor: "white",
-  }
-
   return (
       <div className={classes.restriction}>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false">
@@ -26,7 +21,6 @@ function AgeRestriction() {
           <MyLink key={1}
                   where="/login"
                   linkClass="bw"
-                  style={linkStyle}
           >
             Zaloguj się
           </MyLink>

@@ -11,6 +11,10 @@ function Video() {
 
   const [isAgeRestriction, setIsAgeRestriction] = useState(false);
 
+  setTimeout(() => {
+    setIsAgeRestriction(true);
+  }, 1500);
+
   const displayAgeRestriction = () => {
     setIsAgeRestriction(true)
   }
