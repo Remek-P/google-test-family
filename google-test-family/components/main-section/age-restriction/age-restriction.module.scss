@@ -1,3 +1,5 @@
+@import "../../../styles/variables/colours";
+
 .restriction {
   position: absolute;
   display: flex;
@@ -5,13 +7,16 @@
   align-items: center;
   width: 100%;
   height: 100%;
+  gap: 5%;
+  padding-left: 15%;
+  padding-right: 15%;
 
-  background-color: #0f0f0f;
+  background-color: $color-background-dark;
 
   & > svg {
-    width: 20%;
+    width: 40%;
     aspect-ratio: 1 / 1;
-    fill: gray;
+    fill: $color-badge-grey-text-light;
   }
 
   &Container {
@@ -30,15 +35,11 @@
   }
 
   &Text {
+    padding-bottom: 5px;
+
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
 
-  &LinkInfo {
-
-  }
-
-  &LinkLogin {
-
-  }
+//links styled by component MyLink
 }

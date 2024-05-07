@@ -1,9 +1,14 @@
-.regular, .full {
+.regular,
+.full,
+.bw {
   line-height: 1.5;
   font-size: 0.875rem;
-  color: #065fd4;
   text-decoration: none;
   cursor: pointer;
+}
+
+.regular, .full {
+  color: #065fd4;
 }
 
 .regular {
@@ -26,6 +31,18 @@
     border-color: #3f3f3f;
     color: #3da5fe;
   }
+}
+
+.bw {
+  display: inline-block;
+  border-radius: 500px;
+  padding: 11px 13px;
+  background-color: #fff;
+  color: #000;
+  font-weight: 500;
+}
+.bw:hover {
+  background-color: #f0f4f9;
 }
 
 /*# sourceMappingURL=my-link.module.css.map */

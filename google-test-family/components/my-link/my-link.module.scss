@@ -1,12 +1,17 @@
 @import "../../styles/variables/colours";
 
-.regular, .full {
+.regular,
+.full,
+.bw {
   line-height: 1.5;
   font-size: 0.875rem;
-  color: $color-sign-in-text-light;
   text-decoration: none;
 
   cursor: pointer;
+}
+
+.regular, .full {
+  color: $color-sign-in-text-light;
 }
 
 .regular {
@@ -32,4 +37,20 @@
     border-color: $color-sign-in-dark;
     color: $color-sign-in-text-dark;
   }
+}
+
+.bw {
+  display: inline-block;
+  border-radius: 500px;
+  padding: 11px 13px;
+
+  background-color: $color-button-font-light;
+
+  color: $color-button-font-dark;
+  font-weight: 500;
+
+  &:hover {
+    background-color: $color-button-hover-light;
+  }
+
 }

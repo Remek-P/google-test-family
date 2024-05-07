@@ -4,6 +4,10 @@ import classes from "./age-restriction.module.scss";
 
 function AgeRestriction() {
 
+  const linkStyle = {
+    backgroundColor: "white",
+  }
+
   return (
       <div className={classes.restriction}>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false">
@@ -15,19 +19,17 @@ function AgeRestriction() {
           <p className={classes.restrictionText}>Przejdź krótką weryfikację, aby potwierdzić, że jesteś w odpowiednim
             wieku, by obejrzeć ten film.&ensp;
             <MyLink key={1} where="https://support.google.com/youtube/answer/10070779?hl=pl#zippy="
-                    linkClass={classes.restrictionLinkInfo}>
+                    linkClass="regular">
               Więcej informacji
             </MyLink>
           </p>
           <MyLink key={1}
                   where="/login"
-                  children="Zaloguj się"
-                  linkClass="regular"
-                  // style={{
-                  //   backgroundColor: "white",
-                  //   color: "black"
-                  // }}
-          />
+                  linkClass="bw"
+                  style={linkStyle}
+          >
+            Zaloguj się
+          </MyLink>
         </div>
       </div>
   );

@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["age-restriction.module.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;EACA;EACA;EACA;EAEA;;AAEA;EACE;EACA;EACA;;AAOF;EAEE;EACA;;AAGF;EACE;EACA;;AAGF;EACE;EACA","file":"age-restriction.module.css"}
+{"version":3,"sourceRoot":"","sources":["age-restriction.module.scss","../../../styles/variables/colours.scss"],"names":[],"mappings":"AAEA;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EAEA,kBCSsB;;ADPtB;EACE;EACA;EACA,MCJ0B;;ADW5B;EAEE;EACA;;AAGF;EACE;EACA;;AAGF;EACE;EAEA;EACA","file":"age-restriction.module.css"}
