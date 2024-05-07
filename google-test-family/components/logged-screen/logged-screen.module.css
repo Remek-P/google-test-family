@@ -5,6 +5,8 @@
   align-items: center;
   width: 100%;
   height: 100dvh;
+  padding: 5%;
+  gap: 3%;
   color: red;
 }
 .loggedHeader {
@@ -16,6 +18,7 @@
   counter-reset: css-counter 0;
 }
 .loggedList > p {
+  padding-bottom: 5%;
   counter-increment: css-counter 1;
 }
 .loggedList > p::before {
