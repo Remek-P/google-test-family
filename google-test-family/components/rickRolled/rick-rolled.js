@@ -11,7 +11,7 @@ function RickRolled() {
                 title="Rick Rolled"
                 sandbox
                 loading="eager"
-                allow="autoplay"/>
+                allow="autoplay"></iframe>
       </div>
   );
 }
