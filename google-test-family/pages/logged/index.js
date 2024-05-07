@@ -1,8 +1,8 @@
-import RickRolled from "@/components/rickRolled/rick-rolled";
+import LoggedScreen from "@/components/logged-screen/logged-screen";
 
 function Index() {
   return (
-      <RickRolled />
+      <LoggedScreen />
   );
 }
 
